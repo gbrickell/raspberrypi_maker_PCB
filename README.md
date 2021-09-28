@@ -1,6 +1,7 @@
 # Raspberry Pi Maker Kit v5.0
  Code and documentation for a Raspberry Pi Maker Kit.
-![annotated assembled PCB]<img src="images/annotated_assembled_PCB05_v2_900w.jpg" width="300" height="169">
+ 
+<img src="images/annotated_assembled_PCB05_v2_900w.jpg" width="600" height="338">
 
 A robust permanent module, that connects to the Raspberry Pi GPIO pins, can be created by soldering a set of components into a custom Printed Circuit Board (PCB v5.0). The module design, as shown above, includes a number of on-board devices that can be controlled by the Pi, but also allows a wide range of further components to be connected to the PCB enabling more Pi controlled systems to be explored.
 
