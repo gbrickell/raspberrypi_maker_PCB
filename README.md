@@ -1,5 +1,10 @@
 # Raspberry Pi Maker Kit v5.0
- Code and documentation for a Raspberry Pi Maker Kit.
+ Documentation and example code for usage exploration of:
+ - basic electronic functions
+ - LCD, OLED and LED displays
+ - servo, stepper and drive motor control
+ - various sensors, and 
+ - image taking with a USB camera
 
 <img src="images/annotated_assembled_PCB05_v2_900w.jpg" width="600" height="338">
 
