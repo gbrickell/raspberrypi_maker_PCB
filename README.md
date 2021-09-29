@@ -6,11 +6,11 @@
  - various sensors, and 
  - image taking with a USB camera
 
-<img src="images/annotated_assembled_PCB05_v2_900w.jpg" width="600" height="338" style="margin-left: 50px;">
+ &nbsp; &nbsp; <img src="images/annotated_assembled_PCB05_v2_900w.jpg" width="600" height="338">
 
 A robust permanent module, that connects to the Raspberry Pi GPIO pins, can be created by soldering a set of components into a custom Printed Circuit Board (PCB v5.0). The module design, as shown above, includes a number of on-board devices that can be controlled by the Pi (e.g. buzzer, LEDs, etc.), but also allows a wide range of further components to be connected to the PCB enabling more Pi controlled systems to be explored.
 
-<img src="images/RPi_kits_PCB05_front_image01.png" width="200" height="180" style="margin-right: 20px;">  <img src="images/RPi_kits_PCB05_front01_900w.jpg" width="200" height="182" style="margin-right: 20px;">  <img src="images/RPI_PCB05_kit_parts_20210512_160539500_900w.jpg" width="200" height="135">  
+<img src="images/RPi_kits_PCB05_front_image01.png" width="200" height="180"> &nbsp; &nbsp; <img src="images/RPi_kits_PCB05_front01_900w.jpg" width="198" height="180"> &nbsp; &nbsp; <img src="images/RPI_PCB05_kit_parts_20210512_160539500_900w.jpg" width="267" height="180">  
 
 The custom PCB (now at v5.0) was designed using KiCAD and the Kit has been defined to provide all the components needed to build a fully populated module.
 
