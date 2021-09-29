@@ -17,9 +17,8 @@ The custom PCB (now at v5.0) was designed using KiCAD and the Kit has been defin
 Full details about the project are published at <a href="https://onlinedevices.co.uk/Raspberry+Pi+Maker+Kit" target="_blank" >this link</a> and the designs for a small number of associated custom 3D printed components can be downloaded from <a href="https://www.prusaprinters.org/prints/68834-raspberry-pi-maker-kit-pcb-stands" target="_blank">here</a>.
 
 ## Raspberry Pi SBC code
-Example code is provided for the Pi's Scratch offline versions 1.4, 2 and 3 so that all the common Raspberry Pi SBC formats that can run Scratch in some form has an option.
+Example code is provided, just for the 'basic electronics' exploration, using the Pi's Scratch offline versions 1.4, 2 and 3, so that all the common Raspberry Pi SBC formats that can run Scratch in some form has an option.
 
-The provided Python example code can usually be run using the Thonny IDE on a Pi SBC but suggested CLI commands are also provided in the code as a comment where the installed folders are assumed to be:
-/home/pi/RPi_maker_kit5/foldername/ where foldername is for one of the specific areas that is being explored, e.g. displays, sensors, etc.
+Python example code is provided for all the 'exploration' areas and can usually be run using the Thonny IDE on a Pi SBC, but suggested CLI commands are also provided in the code as a comment, where the installed folders are assumed to be: /home/pi/RPi_maker_kit5/foldername/ where 'foldername' is for one of the specific areas that is being explored, e.g. displays, sensors, etc.
 
 The image taking code also assumes various folders for the storage of different types of 'taken' images and these folders are not always auto-created so the code should be checked so that the appropriate folders can be created before the code is run.
