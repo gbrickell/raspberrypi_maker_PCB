@@ -19,6 +19,8 @@ Full details about the project are published at <a href="https://onlinedevices.c
 ## Raspberry Pi SBC code
 Example code is provided, just for the 'basic electronics' exploration, using the Pi's Scratch offline versions 1.4, 2 and 3, so that all the common Raspberry Pi SBC formats that can run Scratch in some form has an option.
 
-Python example code is provided for all the 'exploration' areas and can usually be run using the Thonny IDE on a Pi SBC, but suggested CLI commands are also provided in the code as a comment, where the installed folders are assumed to be: /home/pi/RPi_maker_kit5/foldername/ where 'foldername' is for one of the specific areas that is being explored, e.g. displays, sensors, etc.
+Python example code is provided for all the 'exploration' areas and can usually be run using the Thonny IDE on a Pi SBC, but suggested CLI commands for the pi user are also provided in the code as a comment, where the installed folders are assumed to be: /home/pi/RPi_maker_kit5/foldername/ where 'foldername' is for one of the specific areas that is being explored, e.g. displays, sensors, etc.
 
 The image taking code also assumes various folders for the storage of different types of 'taken' images and these folders are not always auto-created so the code should be checked so that the appropriate folders can be created before the code is run.
+
+
