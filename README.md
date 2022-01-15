@@ -3,7 +3,8 @@
  - basic electronic functions
  - LCD, OLED and LED displays
  - servo, stepper and drive motor control
- - various sensors, and 
+ - various sensors
+ - 433Mz ASK/OOK RF communications, and 
  - image taking with a USB camera
 
  &nbsp; &nbsp; <img src="images/annotated_assembled_PCB05_v2_900w.jpg" width="600" height="338">
