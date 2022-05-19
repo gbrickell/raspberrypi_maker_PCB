@@ -4,7 +4,7 @@
 # See LICENSE.rst for details.
 
 # used in a RPi maker Kit display demonstration
-# command:  python3 /home/pi/RPi_maker_kit5/displays/MAX7219_7segment_LED/sevensegment_demo.py
+# command:  python3 ./RPi_maker_kit5/displays/MAX7219_7segment_LED/sevensegment_demo.py
 
 """
 Example for seven segment displays.

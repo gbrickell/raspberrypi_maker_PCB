@@ -4,7 +4,7 @@
 
 # based upon the Adafruit examples when using the Adafruit SSD1306 library
 
-# command:  python3 /home/pi/RPi_maker_kit5/displays/OLED_128x64_I2C/simple_text.py
+# command:  python3 ./RPi_maker_kit5/displays/OLED_128x64_I2C/simple_text.py
 
 import time
 

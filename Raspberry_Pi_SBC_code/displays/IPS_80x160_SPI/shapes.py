@@ -1,5 +1,5 @@
 # adaptation for RPi Maker Kit PCB v5.0
-# command:  python3 /home/pi/RPi_maker_kit5/displays/IPS_80x160_SPI/shapes.py
+# command:  python3 ./RPi_maker_kit5/displays/IPS_80x160_SPI/shapes.py
 
 
 # Copyright (c) 2014 Adafruit Industries
@@ -31,6 +31,16 @@ import ST7735
 import time
 
 print("shapes.py - Display test shapes on the LCD using PIL.")
+
+# Create ST7735 LCD display class.
+#disp = ST7735.ST7735(
+    #port=0,
+    #cs=ST7735.BG_SPI_CS_FRONT,  # BG_SPI_CSB_BACK or BG_SPI_CS_FRONT
+    #dc=9,
+    #backlight=19,               # 18 for back BG slot, 19 for front BG slot.
+    #rotation=90,
+    #spi_speed_hz=4000000
+#)
 
 # Create ST7735 LCD display class customised for RPI Maker Kit v5.0
 disp = ST7735.ST7735(

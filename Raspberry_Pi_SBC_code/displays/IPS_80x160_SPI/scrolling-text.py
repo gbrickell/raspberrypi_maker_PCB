@@ -1,5 +1,5 @@
 # adaptation for RPi Maker Kit PCB v5.0
-# command:  python3 /home/pi/RPi_maker_kit5/displays/IPS_80x160_SPI/scrolling-text.py
+# command:  python3 ./RPi_maker_kit5/displays/IPS_80x160_SPI/scrolling-text.py
 
 from PIL import Image
 from PIL import ImageDraw

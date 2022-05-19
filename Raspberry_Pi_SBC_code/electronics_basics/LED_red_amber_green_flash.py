@@ -1,6 +1,6 @@
 # RPi kits PCB version of LED_red_amber_green_flash.py that alternates on/off for three LEDs (red, amber & green)
 
-# command to run this script:  python3 /home/pi/RPi_maker_kit5/electronic_basics/LED_red_amber_green_flash.py
+# command to run this script:  python3 ./RPi_maker_kit5/electronic_basics/LED_red_amber_green_flash.py
 
 import RPi.GPIO as GPIO   # this imports the module to allow the GPIO pins to be easily utilised
 import time               # this imports the module to allow various time functions to be used

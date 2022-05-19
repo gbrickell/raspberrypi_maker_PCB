@@ -10,7 +10,7 @@
 
 # This detailed version of the code uses more descriptive variable names and provides more comments throughout
 
-# command: python3 /home/pi/RPi_maker_kit5/motor_control/stepper_motors/wave_drive_stepper.py
+# command: python3 ./RPi_maker_kit5/motor_control/stepper_motors/wave_drive_stepper.py
 
 # Import required libraries
 import sys

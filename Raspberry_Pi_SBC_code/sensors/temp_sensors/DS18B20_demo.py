@@ -3,7 +3,7 @@
 #  uses the 1-wire interface to measure temperature
 # Author : Enmore Green Limited
 # Date   : 210422
-# command to run:  python3 /home/pi/RPi_maker_kit5/sensors/temp_sensors/DS18B20_demo.py
+# command to run:  python3 ./RPi_maker_kit5/sensors/temp_sensors/DS18B20_demo.py
 #  command above to be updated for the user's path to the code
 
 #+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -59,7 +59,10 @@ import os     # import this library to be able to easily do a file check
 #sensor_code = '28-0517c1e67dff'
 #sensor_code = '28-0517c1a6ebff'
 #sensor_code = '28-0417c1c353ff'
-sensor_code = '28-0417c1b0c5ff'
+#sensor_code = '28-0417c1b0c5ff'
+#sensor_code = '28-020691771b99'
+#sensor_code = '28-02089177aeca'
+sensor_code = '28-020391774d7e'
 
 # set the full path/file address for where the 1-wire interface puts the sensor's data
 temp_sensor = '/sys/bus/w1/devices/' + sensor_code + '/w1_slave'

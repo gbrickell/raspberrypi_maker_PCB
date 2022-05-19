@@ -2,7 +2,7 @@
 #  this is done by measuring the resistance of the thermistor using a so-called 'step response' method
 #  and then the resistance is interpreted as a temperature according to the Steinhart-Hart equation
 
-# command to run this script:  python3 /home/pi/RPi_maker_kit5/sensors/temp_sensors/thermistor_sensor.py
+# command to run this script:  python3 ./RPi_maker_kit5/sensors/temp_sensors/thermistor_sensor.py
 
 import RPi.GPIO as GPIO   # this imports the module to allow the GPIO pins to be easily utilised
 import time, math         # this imports the time and math modules to allow various time & math functions to be used

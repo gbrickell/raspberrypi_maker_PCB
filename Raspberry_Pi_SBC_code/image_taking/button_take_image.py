@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # RPi kits PCB version of button_take_image.py - simple image taking routine using a button
 #
-# command: python3 /home/pi/RPi_maker_kit5/image_taking/button_take_image.py
+# command: python3 ./RPi_maker_kit5/image_taking/button_take_image.py
 #
 
 import time                # this imports the module to allow various simple time functions to be used
@@ -9,6 +9,10 @@ import RPi.GPIO as GPIO    # this imports the module to allow the GPIO pins to b
 import os                  # this imports the module to allow direct CLI commands to be run
 from builtins import input # allows compatibility for input between Python 2 & 3
 import subprocess
+import pyautogui
+
+# get the current username for use in file storage paths
+user_name = os.getlogin()
 
 # This code sets the RPi to use the BCM (Broadcom) pin numbers which is usually the default but is positively set here
 GPIO.setmode(GPIO.BCM)
@@ -29,7 +33,7 @@ def btn_pressed():
 image_subfolder = " "
 print (" ")
 print (" ***************************************************************************")
-print (" All button triggered images will be stored under /home/pi/RPi_maker_kit5/image_taking/ ")
+print (" All button triggered images will be stored under ./RPi_maker_kit5/image_taking/ ")
 print ("   ..... but you must now enter a subfolder name")
 print ("   ..... just hit RETURN for the default of 'single_image_folder'")
 while len(image_subfolder) <= 5 or " " in image_subfolder :
@@ -37,14 +41,18 @@ while len(image_subfolder) <= 5 or " " in image_subfolder :
 print (" ***************************************************************************")
 print (" ")
 
-imagefolder = "/home/pi/RPi_maker_kit5/image_taking/" + image_subfolder + "/"
+imagefolder = "/home/" + user_name + "/RPi_maker_kit5/image_taking/" + image_subfolder + "/"
 
 # create the directory if it does not exist
 if not os.path.exists(imagefolder):
     os.makedirs(imagefolder)      # execute the folder creation command
-    # create a command string to make sure the new folder is 'owned' by the pi user
-    os_chown_command = "chown -R pi:pi " + imagefolder
-    os.system(os_chown_command)   # execute the file ownership change command
+
+    # if for some reason new file/directory ownership becomes an issue
+    # uncomment the lines below changing YOURUSERNAME to 'your user name' :-)
+    # create a command string to make sure the new folder is 'owned' by YOURUSERNAME
+    #os_chown_command = "chown -R YOURUSERNAME:YOURUSERNAME " + imagefolder
+    #os.system(os_chown_command)   # execute the file ownership change command
+
     print (imagefolder + " folder created")
 else:
     print (imagefolder + " already exists, so no need to create it")
@@ -76,9 +84,12 @@ try:    # this loop is not strictly necessary but it does allow the script to be
         # add --flip <direction> where <direction> can be h or v if you do want to flip the image for some reason
         os_image_command = "fswebcam -S 5 -r 640x480 -q --no-banner --jpeg 80 " + image_name  
         os.system(os_image_command)          # take the image using the fswebcam command string
-        # create the command string to make sure the new file is 'owned by the pi user
-        os_chown_command = "chown pi:pi " + image_name
-        os.system(os_chown_command)          # execute the file ownership change command
+
+        # if for some reason new file/directory ownership becomes an issue
+        # uncomment the lines below changing YOURUSERNAME to 'your user name' :-)
+        # create a command string to make sure the new file is 'owned' by YOURUSERNAME
+        #os_chown_command = "chown YOURUSERNAME:YOURUSERNAME " + image_name
+        #os.system(os_chown_command)   # execute the file ownership change command
 
         time.sleep(1)      # wait a short interval before cycling back to allow the image capture to complete
         print (" ")
@@ -113,7 +124,7 @@ try:    # this loop is not strictly necessary but it does allow the script to be
         print (" press button 2 again to take another single image or type CTRL-C to stop the program")
         # close the image - if it was shown - before starting the next cycle
         if showimage == "Y" or showimage == "y":
-            image.kill()
+            pyautogui.press('esc')     # simulates pressing the ESC key
 
 finally:  # this code is run when the try is interrupted with a CTRL-C
     print(" ")

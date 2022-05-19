@@ -3,7 +3,7 @@
 # RPi kits PCB RF comms test routine
 # this version for use with the SRX882 receiver module
 
-# Command to run:  python3 /home/pi/RPi_maker_kit5/RF_communication/SRX882+STX882_comms/rpi-rf_receive.py
+# Command to run:  python3 ./RPi_maker_kit5/RF_communication/SRX882+STX882_comms/rpi-rf_receive.py
 ## edit the command above to change pi to your userId and to adjust 
 ## the file path depending upon where you have stored this file
 #

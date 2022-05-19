@@ -3,7 +3,7 @@
 # file name: switch_socke02t.py   (identical code as used with the STX882 - but maintained separately so that they could diverge)
 # simple 'raw' OOK code send with FS1000A tranmission board to an Energenie green button socket
 #
-# command to run: python3 /home/pi/RPi_maker_kit5/RF_communication/C218D001C+FS1000A_comms/switch_socket02.py
+# command to run: python3 ./RPi_maker_kit5/RF_communication/C218D001C+FS1000A_comms/switch_socket02.py
 ## edit the command above to change pi to your userId and to adjust 
 ## the file path depending upon where you have stored this file
 

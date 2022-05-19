@@ -1,6 +1,6 @@
 # RPI Maker Kit examle code for the TM1637 7 segment LED display
 
-# command:  python3 /home/pi/RPi_maker_kit5/displays/TM1637_7segment_LED/TM1637_test01.py
+# command:  python3 ./RPi_maker_kit5/displays/TM1637_7segment_LED/TM1637_test01.py
 
 
 import tm1637  # imports the library that should be installed by: sudo pip3 install raspberrypi-tm1637

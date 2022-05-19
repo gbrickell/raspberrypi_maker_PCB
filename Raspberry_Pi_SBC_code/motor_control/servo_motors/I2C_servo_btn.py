@@ -3,15 +3,17 @@
 # RPi kits PCB version of I2C_servo_btn.py - servo control using a PCA9685 I2C controller
 # moves a SG90 servo on channel 0 from min to max position whenever a button is pressed
 #
-# command:  python3 /home/pi/RPi_maker_kit5/motor_control/servo_motors/I2C_servo_btn.py
+# command:  python3 ./RPi_maker_kit5/motor_control/servo_motors/I2C_servo_btn.py
 
 # CLI command to check I2C address:  i2cdetect -y -r 1
 #
 
 import time               # this imports the module to allow various time functions to be used
 import RPi.GPIO as GPIO   # this imports the module to allow the GPIO pins to be easily utilised
+GPIO.setwarnings(False)
 
 import Adafruit_PCA9685   # this imports a library that supports the I2C servo control board (PCA9685)
+# use i2cdetect -y 1 to check what is connected
 
 # This code sets the RPi to use the BCM (Broadcom) pin numbers which is usually the default but is positively set here
 GPIO.setmode(GPIO.BCM)

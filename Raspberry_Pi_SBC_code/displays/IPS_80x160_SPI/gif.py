@@ -1,5 +1,5 @@
 # adaptation for RPi Maker Kit PCB v5.0
-# command:  python3 /home/pi/RPi_maker_kit5/displays/IPS_80x160_SPI/gif.py /home/pi/RPi_maker_kit5/displays/IPS_80x160_SPI/deployrainbows.gif
+# command:  python3 ./RPi_maker_kit5/displays/IPS_80x160_SPI/gif.py ./RPi_maker_kit5/displays/IPS_80x160_SPI/deployrainbows.gif
 
 # Copyright (c) 2014 Adafruit Industries
 # Author: Phil Howard, Tony DiCola

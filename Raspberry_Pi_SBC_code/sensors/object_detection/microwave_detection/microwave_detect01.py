@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # RPi kits PCB - simple object detection triggered by movement sensed by a RCWL-0516 microwave sensor
 #
-# command: python3 /home/pi/RPi_maker_kit5/sensors/object_detection/microwave_detection/microwave_detect01.py
+# command: python3 ./RPi_maker_kit5/sensors/object_detection/microwave_detection/microwave_detect01.py
 #
 
 import time                # this imports the module to allow various simple time functions to be used

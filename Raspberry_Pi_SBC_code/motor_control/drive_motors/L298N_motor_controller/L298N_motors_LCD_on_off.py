@@ -1,6 +1,6 @@
 # L298N controlled motors - Simple on/off Motor Test Code ie not using PWM00000
 
-# command to run:  python3 /home/pi/RPi_maker_kit5/motor_control/drive_motors/L298N_motor_controller/L298N_motors_LCD_on_off.py
+# command to run:  python3 ./RPi_maker_kit5/motor_control/drive_motors/L298N_motor_controller/L298N_motors_LCD_on_off.py
 
 #+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 #

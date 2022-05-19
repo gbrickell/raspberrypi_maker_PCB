@@ -6,7 +6,7 @@
 # 
 # the CLI command text below is for when the app is in the standard folder
 #  BUT this will need to be updated for the individual installation/user name which may be different
-# command to run: python3 /home/pi/RPi_maker_kit5/electronic_basics/ebasics_web_controller/LED1_flash_web.py
+# command to run: python3 ./RPi_maker_kit5/electronic_basics/ebasics_web_controller/LED1_flash_web.py
 #
 # But this can also be run from the Thonny IDE
 

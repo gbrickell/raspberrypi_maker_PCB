@@ -8,7 +8,7 @@
 # Note: only run this script with the RPi assembly directly connected to a screen etc so that the 
 # plot processes will automatically run in a separate X-window  
 
-# Command to run:  python3 /home/pi/RPi_maker_kit5/RF_communication/RXB8_comms/Key_Fob_RX_plot_RXB8.py
+# Command to run:  python3 ./RPi_maker_kit5/RF_communication/RXB8_comms/Key_Fob_RX_plot_RXB8.py
 ## edit the command above to change pi to your userId and to adjust 
 ## the file path depending upon where you have stored this file
 #

@@ -2,7 +2,7 @@
 
 # RPi kits PCB version of HG7881 motor controller
 
-# command to run:  python3 /home/pi/RPi_maker_kit5/motor_control/drive_motors/HG7881_motor_controller/HG7881-motors_LCD_PWM.py
+# command to run:  python3 ./RPi_maker_kit5/motor_control/drive_motors/HG7881_motor_controller/HG7881-motors_LCD_PWM.py
 # PWM test version
 #  N.B. it is important not to 'mix' PWM and simple on/off as this seems to confuse the HG7881
 

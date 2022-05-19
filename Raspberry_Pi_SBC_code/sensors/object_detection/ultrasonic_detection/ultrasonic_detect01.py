@@ -2,7 +2,7 @@
 # RPi kits PCB simple ultrasonic object detection using the HC-SR04P sensor
 #   **** NB this must be the 3.3V powered 'P' version ***
 #
-# command: python3 /home/pi/RPi_maker_kit5/sensors/object_detection/ultrasonic_detection/ultrasonic_detect01.py
+# command: python3 ./RPi_maker_kit5/sensors/object_detection/ultrasonic_detection/ultrasonic_detect01.py
 #
 
 import RPi.GPIO as GPIO # Import the GPIO Library

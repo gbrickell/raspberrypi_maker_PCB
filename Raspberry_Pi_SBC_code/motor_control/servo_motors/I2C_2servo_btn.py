@@ -3,16 +3,16 @@
 # RPi kits PCB version of I2C_2servo_btn.py - servo control using a PCA9685 I2C controller
 # moves servos on channels 0 and 15 from min to max position whenever each button is pressed
 #
-# command:  python3 /home/pi/RPi_maker_kit5/motor_control/servo_motors/I2C_2servo_btn.py
-#
-#
+# command:  python3 ./RPi_maker_kit5/motor_control/servo_motors/I2C_2servo_btn.py
 #
 
 import time               # this imports the module to allow various time functions to be used
 import RPi.GPIO as GPIO   # this imports the module to allow the GPIO pins to be easily utilised
+GPIO.setwarnings(False)
 
 import Adafruit_PCA9685   # this imports a library that interfaces with the I2C servo control board (PCA9685)
                           #   and provides a set of PWM (pulse width modulation) functions the board can supply
+# use i2cdetect -y 1 to check what is connected
 
 # This code sets the RPi to use the BCM (Broadcom) pin numbers which is usually the default but is positively set here
 GPIO.setmode(GPIO.BCM)
@@ -60,13 +60,13 @@ servo1_mid = 350   # channel 0 left hand servo
 servo1_max = 580   # channel 0 left hand servo
 
 # min: 1ms pulse length ie should be 205 steps out of 4096 but fine tuned for the specific servo - see the support documentation for more details
-servo2_min = 150   # channel 15 right hand servo
+servo2_min = 160   # channel 15 right hand servo
 
 # mid: 1.5ms pulse length ie should be 308 steps out of 4096 but fine tuned for the specific servo - see the support documentation for more details 
-servo2_mid = 350   # channel 15 right hand servo
+servo2_mid = 365   # channel 15 right hand servo
 
 # max: 2ms pulse length ie should be 410 steps out of 4096 but fine tuned for the specific servo - see the support documentation for more details
-servo2_max = 600   # channel 15 right hand servo
+servo2_max = 615   # channel 15 right hand servo
 
 print("Program running: press a button to move a servo from min to max once - CTRL C to stop")
 try:    # this loop is not strictly necessary but it does allow the script to be easily stopped with CTRL-C
