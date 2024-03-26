@@ -1,4 +1,4 @@
-# Raspberry Pi Maker Kit v5.0
+# Raspberry Pi Maker PCB v5.0
 ## Documentation and example code for usage exploration of:
  - basic electronic functions
  - LCD, OLED and LED displays
@@ -13,9 +13,9 @@ A robust permanent module, that connects to the Raspberry Pi GPIO pins, can be c
 
 <img src="images/RPi_kits_PCB05_front_image01.png" width="200" height="180"> &nbsp; &nbsp; <img src="images/RPi_kits_PCB05_front01_900w.jpg" width="198" height="180"> &nbsp; &nbsp; <img src="images/RPI_PCB05_kit_parts_20210512_160539500_900w.jpg" width="267" height="180">  
 
-The custom PCB (now at v5.0) was designed using KiCAD and the Kit has been defined to provide all the components needed to build a fully populated module.
+The custom PCB (now at v5.0) was designed using KiCAD and the layout has been defined to provide all the components needed to build a fully populated module.
 
-Full details about the project are published at <a href="https://onlinedevices.co.uk/Raspberry+Pi+Maker+Kit" target="_blank" >this link</a> and the designs for a small number of associated custom 3D printed components can be downloaded from <a href="https://www.prusaprinters.org/prints/68834-raspberry-pi-maker-kit-pcb-stands" target="_blank">here</a>.
+Full details about the project are published at <a href="https://onlinedevices.org.uk/Raspberry+Pi+Maker+PCB" target="_blank" >this link</a> and the designs for a small number of associated custom 3D printed components can be downloaded from <a href="https://www.prusaprinters.org/prints/68834-raspberry-pi-maker-kit-pcb-stands" target="_blank">here</a>.
 
 ## Raspberry Pi SBC code
 The code and documentation has been updated to allow for a generalised username instead of the previous default username 'pi' and an installation script is provided that not only downloads all the code and documentation but also installs all the various libraries/modules needed by the code.
