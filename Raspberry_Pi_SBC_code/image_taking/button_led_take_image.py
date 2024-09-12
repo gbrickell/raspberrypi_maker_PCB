@@ -16,6 +16,7 @@ import RPi.GPIO as GPIO    # this imports the module to allow the GPIO pins to b
 import os                  # this imports the module to allow direct CLI commands to be run
 from builtins import input # allows compatibility for input between Python 2 & 3
 import subprocess
+import re
 import pyautogui
 
 # get the current username for use in file storage paths
@@ -70,27 +71,26 @@ def btn_pressed():
         return 1
 
 # define the folder where images will be stored
-image_subfolder = " "
+time_subfolder = " "
 print (" ")
-print (" ***************************************************************************")
-print (" All button triggered images will be stored under ./RPi_maker_kit5/image_taking/ ")
+print (" ******************************************************************************************************")
+print (" All button triggered images will be stored under /home/" + user_name + "/RPi_maker_kit5/image_taking/ ")
 print ("   ..... but you must now enter a subfolder name")
 print ("   ..... just hit RETURN for the default of 'single_image_led_folder'")
-while len(image_subfolder) <= 5 or " " in image_subfolder :
-    image_subfolder = input(" Enter sub-folder name - must be more than 5 characters and no spaces (CTRL C to stop? )") or "single_image_led_folder"
-print (" ***************************************************************************")
+while len(time_subfolder) <= 5 or " " in time_subfolder :
+    time_subfolder = input(" Enter sub-folder name - must be more than 5 characters and no spaces (CTRL C to stop? )") or "single_image_led_folder"
+print (" ******************************************************************************************************")
 print (" ")
 
-imagefolder = "/home/" + user_name + "/RPi_maker_kit5/image_taking/" + image_subfolder + "/"
+imagefolder = "/home/" + user_name + "/RPi_maker_kit5/image_taking/" + time_subfolder + "/"
 
 # create the directory if it does not exist
 if not os.path.exists(imagefolder):
     os.makedirs(imagefolder)      # execute the folder creation command
-    # if for some reason new file/directory ownership becomes an issue
-    # uncomment the lines below changing YOURUSERNAME to 'your user name' :-)
-    # create a command string to make sure the new folder is 'owned' by YOURUSERNAME
-    #os_chown_command = "chown -R YOURUSERNAME:YOURUSERNAME " + imagefolder
-    #os.system(os_chown_command)   # execute the file ownership change command
+    # in some circumstances new file/directory ownership may become an issue
+    # so the lines below create a command string to make sure the new directory and its files are 'owned' by 'user_name'
+    os_chown_command = "chown -R " + user_name +":" + user_name + " " + imagefolder
+    os.system(os_chown_command)   # execute the file ownership change command
     print (imagefolder + " folder created")
 else:
     print (imagefolder + " already exists, so no need to create it")
@@ -102,6 +102,21 @@ print (" ")
 # the file will not download from the Pi to a Windows machine
 now = time.strftime("%Y-%m-%d_%H.%M.%S")   # this creates a string in a designated format e.g. YYYY-mm-dd_HH.MM.SS
 
+# check where the USB camera is connected
+lsdevres = subprocess.getoutput('ls /dev/')
+if len(re.findall("video0", lsdevres)) > 0 :
+    print ("/dev/video0 is present")
+    usb_device = "-d /dev/video0"
+elif len(re.findall("video1", lsdevres)) > 0 :
+    print ("/dev/video1 is present")
+    usb_device = "-d /dev/video1"
+elif len(re.findall("video2", lsdevres)) > 0 :
+    print ("/dev/video1 is present")
+    usb_device = "-d /dev/video2"
+else:
+    print ("no USB camera is present - exiting the program")
+    usb_device = "exit"
+    sys.exit()
 
 print (now + " - program running : press button 2 to take a single image or type CTRL-C to stop the program")
 try:    # this loop is not strictly necessary but it does allow the script to be easily stopped with CTRL-C
@@ -128,16 +143,16 @@ try:    # this loop is not strictly necessary but it does allow the script to be
         # the example below does not have any flip or rotate options which may be needed
         # add --rotate <angle> where <angle> can be 90, 180 or 270 if rotation needed
         # add --flip <direction> where <direction> can be h or v if you do want to flip the image for some reason
-        os_image_command = "fswebcam -S 5 -r 640x480 -q --no-banner --jpeg 80 " + image_name  
+        # usb_device is determined earlier to set the -d parameter for where the USB camera is connected
+        os_image_command = "fswebcam " + usb_device + " -S 5 -r 640x480 -q --no-banner --jpeg 80 " + image_name
         os.system(os_image_command)          # take the image using the fswebcam command string
-
-        # if for some reason new file/directory ownership becomes an issue
-        # uncomment the lines below changing YOURUSERNAME to 'your user name' :-)
-        # create a command string to make sure the new ffile is 'owned' by YOURUSERNAME
-        #os_chown_command = "chown YOURUSERNAME:YOURUSERNAME " + image_name
-        #os.system(os_chown_command)   # execute the file ownership change command
-
         time.sleep(1)      # wait a short interval before cycling back to allow the image capture to complete
+
+        # in some circumstances new file/directory ownership may become an issue
+        # so the lines below create a command string to make sure the new file is 'owned' by 'user_name'
+        os_chown_command = "chown " + user_name +":" + user_name + " " + image_name
+        os.system(os_chown_command)   # execute the file ownership change command
+
         print (" ")
         print (" ***************************************************************")
         print (" image taken and stored as: " + image_name)
