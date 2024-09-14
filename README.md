@@ -22,11 +22,13 @@ The custom PCB (now at v5.0) was designed using KiCAD and the layout has been de
 Gerber files for the PCB design can be downloaded from the PCB_design_files folder.
 
 ## Raspberry Pi SBC code
-The code and documentation has been updated to allow for a generalised username instead of the previous default username 'pi' and an installation script is provided that not only downloads all the code and documentation but also installs all the various libraries/modules needed by the code.
+The code and documentation has been updated to allow for a generalised username instead of the previous default username 'pi', and for the use of Python using the Bookworm OS the use of a Virtual Environment is described.
+
+An installation script is also provided that not only downloads all the code and documentation but also installs all the various libraries/modules needed by the code.
 
 Example code is provided, just for the 'basic electronics' exploration, using the Pi's Scratch offline versions 1.4, 2 and 3, so that all the common Raspberry Pi SBC formats that can run Scratch in some form has an option.
 
-Python example code is provided for all the 'exploration' areas and can usually be run using the Thonny IDE on a Pi SBC, but suggested CLI commands for the 'pi' user are also provided in the code as a comment, where the installed folders are assumed to be: /home/YOURUSERNAME/RPi_maker_kit5/foldername/ where 'foldername' is for one of the specific areas that is being explored, e.g. displays, sensors, etc.
+Python example code is provided for all the 'exploration' areas and can usually be run using the Thonny IDE on a Pi SBC, but suggested CLI commands for the user are also provided in the code as a comment, where the installed folders are assumed to be: /home/YOURUSERNAME/RPi_maker_kit5/foldername/ where 'foldername' is for one of the specific areas that is being explored, e.g. displays, sensors, etc.
 
 The image taking code also assumes various folders for the storage of different types of 'taken' images and these folders are not always auto-created so the code should be checked so that the appropriate folders can be created before the code is run.
 
