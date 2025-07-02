@@ -4,7 +4,7 @@
 # So to print “Hello World!” at the first column of the top row, you would use: 
 # mylcd.lcd_display_string(“Hello World!”, 1, 0).
 
-# command to run this demo:  python3 ./RPi_maker_kit5/displays/LCD_1602_i2c_display/hello_world.py
+# command to run this demo:  python3 ./RPi_maker_PCB5/displays/LCD_1602_i2c_display/hello_world.py
 
 # CLI command to check I2C address:  i2cdetect -y -r 1
 #

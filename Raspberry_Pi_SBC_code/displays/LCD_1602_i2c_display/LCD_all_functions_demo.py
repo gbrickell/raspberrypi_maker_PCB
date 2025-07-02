@@ -3,7 +3,7 @@
 #     with 3 second gaps between each item
 # On a 16×2 LCD, the rows are numbered 1 – 2, while the columns are numbered 0 – 15. 
 
-# command to run this demo:  python3 ./RPi_maker_kit5/displays/LCD_1602_i2c_display/LCD_all_functions_demo.py
+# command to run this demo:  python3 ./RPi_maker_PCB5/displays/LCD_1602_i2c_display/LCD_all_functions_demo.py
 
 #+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 #

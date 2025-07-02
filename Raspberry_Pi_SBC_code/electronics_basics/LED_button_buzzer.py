@@ -1,6 +1,6 @@
 # RPi kits PCB version of LED_button_buzzer.py that lights a RED LED and sounds a passive buzzer for 'duration' (3) secs when a button is pressed
 
-# command to run this script:  python3 ./RPi_maker_kit5/electronic_basics/LED_button_buzzer.py
+# command to run this script:  python3 ./RPi_maker_PCB5/electronic_basics/LED_button_buzzer.py
 
 import RPi.GPIO as GPIO   # this imports the module to allow the GPIO pins to be easily utilised
 import time               # this imports the module to allow various time functions to be used

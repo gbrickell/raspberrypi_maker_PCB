@@ -4,7 +4,7 @@
 
 # based upon the Adafruit examples when using the Adafruit SSD1306 library
 
-# command:  python3 ./RPi_maker_kit5/displays/OLED_128x64_I2C/image.py
+# command:  python3 ./RPi_maker_PCB5/displays/OLED_128x64_I2C/image.py
 
 # Copyright (c) 2014 Adafruit Industries
 # Author: Tony DiCola
@@ -71,9 +71,9 @@ disp.display()
 # Load image based on OLED display height.  Note that image is converted to 1 bit color.
 # Also: if you are not the user 'pi' edit the file paths below to suit your file space
 if disp.height == 64:
-    image = Image.open('./RPi_maker_kit5/displays/OLED_128x64_I2C/happycat_oled_64.ppm').convert('1')
+    image = Image.open('./RPi_maker_PCB5/displays/OLED_128x64_I2C/happycat_oled_64.ppm').convert('1')
 else:
-    image = Image.open('./RPi_maker_kit5/displays/OLED_128x64_I2C/happycat_oled_32.ppm').convert('1')
+    image = Image.open('./RPi_maker_PCB5/displays/OLED_128x64_I2C/happycat_oled_32.ppm').convert('1')
 
 # Alternatively load a different format image, resize it, and convert to 1 bit color.
 #image = Image.open('happycat.png').resize((disp.width, disp.height), Image.ANTIALIAS).convert('1')

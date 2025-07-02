@@ -9,7 +9,7 @@
 #    - a wait time between steps so that the control board can keep up with the Pi's instructions (WaitTime)
 # WaitTime in ms can also be changed by a command input parameter
 
-# command: python3 ./RPi_maker_kit5/motor_control/stepper_motors/half_step_stepper.py
+# command: python3 ./RPi_maker_PCB5/motor_control/stepper_motors/half_step_stepper.py
 
 # Import required libraries
 import sys

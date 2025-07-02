@@ -2,7 +2,7 @@
 # RPi kits PCB version of test software from QDtech co.,LTD downloadable from http://www.lcdwiki.com
 # various additions/changes made to their test software
 
-# command python3 ./RPi_maker_kit5/displays/IPS_240X240_SPI/source/1.3_IPS_LCD.py
+# command python3 ./RPi_maker_PCB5/displays/IPS_240X240_SPI/source/1.3_IPS_LCD.py
 
 #=====================================power supply wiring===========================================//
 # OLED Module                Raspberry PI    
@@ -46,14 +46,14 @@ user_name = os.getlogin()
 
 #curpath = os.getcwd()
 #font1 = curpath+"/../font/simsun.ttc"
-font1 = "/home/" + user_name + "/RPi_maker_kit5/displays/IPS_240X240_SPI/font/simsun.ttc"
+font1 = "/home/" + user_name + "/RPi_maker_PCB5/displays/IPS_240X240_SPI/font/simsun.ttc"
 
 #pic1 = curpath+"/../pic/pic-1.jpg"
 #pic2 = curpath+"/../pic/pic-2.jpg"
 #pic3 = curpath+"/../pic/pic-3.jpg"
-pic1 = "/home/" + user_name + "/RPi_maker_kit5/displays/IPS_240X240_SPI/pic/pic-1.jpg"
-pic2 = "/home/" + user_name + "/RPi_maker_kit5/displays/IPS_240X240_SPI/pic/pic-2.jpg"
-pic3 = "/home/" + user_name + "/RPi_maker_kit5/displays/IPS_240X240_SPI/pic/pic-3.jpg"
+pic1 = "/home/" + user_name + "/RPi_maker_PCB5/displays/IPS_240X240_SPI/pic/pic-1.jpg"
+pic2 = "/home/" + user_name + "/RPi_maker_PCB5/displays/IPS_240X240_SPI/pic/pic-2.jpg"
+pic3 = "/home/" + user_name + "/RPi_maker_PCB5/displays/IPS_240X240_SPI/pic/pic-3.jpg"
 
 mylcd = lcd.ST7789V(RES,DC,BLK)
 mylcd.lcdinit()

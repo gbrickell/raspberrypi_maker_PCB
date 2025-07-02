@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # RPi kits PCB version of button_timer_take_image.py - timer initiated image taking routine using a button with RGB LED + buzzer indicators
 #
-# command: python3 ./RPi_maker_kit5/image_taking/button_timer_take_image.py
+# command: python3 ./RPi_maker_PCB5/image_taking/button_timer_take_image.py
 #
 # this script uses pulse width modulation (PWM) a technique used to control a variety of 
 # devices (motors, servos as well as LEDs) esentially by switching them on and off very very fast
@@ -83,7 +83,7 @@ def btn_pressed():
 time_subfolder = " "
 print (" ")
 print (" **************************************************************************************************")
-print (" All button timed images will be stored under /home/" + user_name + "/RPi_maker_kit5/image_taking/ ")
+print (" All button timed images will be stored under /home/" + user_name + "/RPi_maker_PCB5/image_taking/ ")
 print ("   ..... but you must now enter a subfolder name")
 print ("   ..... just hit RETURN for the default of 'single_image_timer_folder'")
 while len(time_subfolder) <= 5 or " " in time_subfolder :
@@ -92,7 +92,7 @@ print (" ***********************************************************************
 print (" ")
 
 # build the full path as a text string
-imagefolder = "/home/" + user_name + "/RPi_maker_kit5/image_taking/" + time_subfolder + "/"
+imagefolder = "/home/" + user_name + "/RPi_maker_PCB5/image_taking/" + time_subfolder + "/"
 
 # create the directory if it does not exist
 if not os.path.exists(imagefolder):

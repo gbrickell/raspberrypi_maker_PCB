@@ -4,7 +4,7 @@
 
 # based upon the Adafruit examples when using the Adafruit SSD1306 library
 
-# command:  python3 ./RPi_maker_kit5/displays/OLED_128x64_I2C/shapes.py
+# command:  python3 ./RPi_maker_PCB5/displays/OLED_128x64_I2C/shapes.py
 
 # Copyright (c) 2014 Adafruit Industries
 # Author: Tony DiCola

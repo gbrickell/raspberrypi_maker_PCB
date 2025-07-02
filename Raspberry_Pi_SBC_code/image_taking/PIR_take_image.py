@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # RPi kits PCB version of PIR_take_image.py - image taking routine triggered by movement detected by a PIR
 #
-# command: python3 ./RPi_maker_kit5/image_taking/PIR_take_image.py
+# command: python3 ./RPi_maker_PCB5/image_taking/PIR_take_image.py
 #
 
 import time                # this imports the module to allow various simple time functions to be used
@@ -27,7 +27,7 @@ GPIO.setup(pir_pin, GPIO.IN)   # this sets the input GPIO pin from the PIR to be
 time_subfolder = " "   # give the variable an initial value
 print (" ")
 print (" **************************************************************************************************")
-print (" All PIR detected images will be stored under /home/" + user_name + "/RPi_maker_kit5/image_taking/ ")
+print (" All PIR detected images will be stored under /home/" + user_name + "/RPi_maker_PCB5/image_taking/ ")
 print ("   ..... but you must now enter a subfolder name")
 print ("   ..... just hit RETURN for the default of 'PIR_image_folder'")
 while len(time_subfolder) <= 5 or " " in time_subfolder :
@@ -36,7 +36,7 @@ print (" ***********************************************************************
 print (" ")
 
 # build the full path as a text string
-imagefolder = "/home/" + user_name + "/RPi_maker_kit5/image_taking/" + time_subfolder + "/"
+imagefolder = "/home/" + user_name + "/RPi_maker_PCB5/image_taking/" + time_subfolder + "/"
 
 # create the directory if it does not exist
 if not os.path.exists(imagefolder):

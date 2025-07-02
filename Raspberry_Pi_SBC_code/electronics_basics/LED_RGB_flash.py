@@ -7,7 +7,7 @@
 # for more information see https://pythonhosted.org/RPIO/pwm_py.html
 #   and https://en.wikipedia.org/wiki/Pulse-width_modulation
 #
-# command to run this script:  python3 ./RPi_maker_kit5/electronic_basics/LED_RGB_flash.py
+# command to run this script:  python3 ./RPi_maker_PCB5/electronic_basics/LED_RGB_flash.py
 
 import RPi.GPIO as GPIO   # this imports the whole GPIO module to allow control of the GPIO pins including PWM commands
 import time               # this imports the time module to allow various time functions to be used

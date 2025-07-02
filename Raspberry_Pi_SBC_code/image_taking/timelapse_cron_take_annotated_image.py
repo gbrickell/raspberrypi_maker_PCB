@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # timelapse_cron_take_annotated_image.py - simple annotated image taking routine to be run as a cron job for time lapse image capture
 #
-# command: python3 ./RPi_maker_kit5/image_taking/timelapse_cron_take_annotated_image.py
+# command: python3 ./RPi_maker_PCB5/image_taking/timelapse_cron_take_annotated_image.py
 #
 
 import time                # this imports the module to allow various simple time functions to be used
@@ -17,10 +17,10 @@ user_name = os.getlogin()
 # This basic routine does not use any GPIO functions - it just needs the USB camera connected to the Pi
 # it should be run with a cron job e.g. as root under the sudo crontab ie create the following entry using "sudo crontab -e"
 # script to run every 5 minutes to take an image with the Image Taking Kit's USB camera (adjust time as necessary)
-#*/5 * * * * /home/benpi/my_virtual_env/bin/python3 /home/userId/RPi_maker_kit5/image_taking/timelapse_cron_take_annotated_image.py >> /dev/null 2>> /dev/null
+#*/5 * * * * /home/benpi/my_virtual_env/bin/python3 /home/userId/RPi_maker_PCB5/image_taking/timelapse_cron_take_annotated_image.py >> /dev/null 2>> /dev/null
 # or
 # script to run every 5 minutes from 6am through to 9:55pm (adjust time as necessary)
-#*/5 6-21 * * * /home/benpi/my_virtual_env/bin/python3 /home/userId/RPi_maker_kit5/image_taking/timelapse_cron_take_annotated_image.py >> /dev/null 2>> /dev/null
+#*/5 6-21 * * * /home/benpi/my_virtual_env/bin/python3 /home/userId/RPi_maker_PCB5/image_taking/timelapse_cron_take_annotated_image.py >> /dev/null 2>> /dev/null
 
 # define the text part of what is added to each captured image: the default is "Time-lapse image" but
 # you can change this to whatever you like and it appears before the timestamp info that is also added
@@ -28,7 +28,7 @@ user_name = os.getlogin()
 annotation_text = "Time-lapse image"
 
 # build the full folder path where images will be stored as a text string
-imagefolder = "/home/" + user_name + "/RPi_maker_kit5/image_taking/timelapse_image_folder/"
+imagefolder = "/home/" + user_name + "/RPi_maker_PCB5/image_taking/timelapse_image_folder/"
 
 # create the directory if it does not exist
 if not os.path.exists(imagefolder):

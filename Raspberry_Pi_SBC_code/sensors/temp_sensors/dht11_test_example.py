@@ -4,7 +4,7 @@
 # the sensor should either have a built-in pull-up resistor between the power + and signal out connectors,
 #   or a seperate resistor should be added to the wiring connections
 
-# command to run: python3 ./RPi_maker_kit5/sensors/temp_sensors/dht11_test_example.py
+# command to run: python3 ./RPi_maker_PCB5/sensors/temp_sensors/dht11_test_example.py
 
 import RPi.GPIO as GPIO  # import the GPIO pin management functions
 import dht11             # import the custom DHT11 sensor functions - library code is assumed to be in the same folder

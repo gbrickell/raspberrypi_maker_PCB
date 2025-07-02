@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # RPi kits PCB - simple object detection triggered by SR501, SR312 or SR602 PIR sensor
 #
-# command: python3 ./RPi_maker_kit5/sensors/object_detection/PIR_detection/PIR_detect01.py
+# command: python3 ./RPi_maker_PCB5/sensors/object_detection/PIR_detection/PIR_detect01.py
 #
 
 import time                # this imports the module to allow various simple time functions to be used

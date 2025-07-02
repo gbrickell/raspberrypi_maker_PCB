@@ -3,7 +3,7 @@
 #  uses the 1-wire interface to measure temperature
 # Author : Enmore Green Limited
 # Date   : 210422
-# command to run:  python3 ./RPi_maker_kit5/sensors/temp_sensors/DS18B20_demo.py
+# command to run:  python3 ./RPi_maker_PCB5/sensors/temp_sensors/DS18B20_demo.py
 #  command above to be updated for the user's path to the code
 
 #+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+

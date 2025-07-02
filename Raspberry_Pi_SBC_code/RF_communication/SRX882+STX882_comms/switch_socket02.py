@@ -3,7 +3,7 @@
 # file name: switch_socket.py
 # simple 'raw' OOK code send with STX882 tranmission board to an Energenie green button socket
 #
-# command to run: python3 ./RPi_maker_kit5/RF_communication/SRX882+STX882_comms/switch_socket02.py
+# command to run: python3 ./RPi_maker_PCB5/RF_communication/SRX882+STX882_comms/switch_socket02.py
 ## edit the command above to change pi to your userId and to adjust 
 ## the file path depending upon where you have stored this file
 

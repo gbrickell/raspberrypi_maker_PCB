@@ -3,7 +3,7 @@
 # RPi kits PCB version of I2C_servo_btn.py - servo control using a PCA9685 I2C controller
 # moves a SG90 servo on channel 0 from min to max position whenever a button is pressed
 #
-# command:  python3 ./RPi_maker_kit5/motor_control/servo_motors/I2C_servo_btn.py
+# command:  python3 ./RPi_maker_PCB5/motor_control/servo_motors/I2C_servo_btn.py
 
 # CLI command to check I2C address:  i2cdetect -y -r 1
 #

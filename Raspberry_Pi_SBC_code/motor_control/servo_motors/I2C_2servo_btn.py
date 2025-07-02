@@ -3,7 +3,7 @@
 # RPi kits PCB version of I2C_2servo_btn.py - servo control using a PCA9685 I2C controller
 # moves servos on channels 0 and 15 from min to max position whenever each button is pressed
 #
-# command:  python3 ./RPi_maker_kit5/motor_control/servo_motors/I2C_2servo_btn.py
+# command:  python3 ./RPi_maker_PCB5/motor_control/servo_motors/I2C_2servo_btn.py
 #
 
 import time               # this imports the module to allow various time functions to be used

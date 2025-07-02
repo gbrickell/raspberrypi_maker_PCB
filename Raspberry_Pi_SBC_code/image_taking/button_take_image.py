@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # RPi kits PCB version of button_take_image.py - simple image taking routine using a button
 #
-# command: python3 ./RPi_maker_kit5/image_taking/button_take_image.py
+# command: python3 ./RPi_maker_PCB5/image_taking/button_take_image.py
 #
 
 import time                # this imports the module to allow various simple time functions to be used
@@ -34,7 +34,7 @@ def btn_pressed():
 image_subfolder = " "
 print (" ")
 print (" ******************************************************************************************************")
-print (" All button triggered images will be stored under /home/" + user_name + "/RPi_maker_kit5/image_taking/ ")
+print (" All button triggered images will be stored under /home/" + user_name + "/RPi_maker_PCB5/image_taking/ ")
 print ("   ..... but you must now enter a subfolder name")
 print ("   ..... just hit RETURN for the default of 'single_image_folder'")
 while len(image_subfolder) <= 5 or " " in image_subfolder :
@@ -42,7 +42,7 @@ while len(image_subfolder) <= 5 or " " in image_subfolder :
 print (" ******************************************************************************************************")
 print (" ")
 
-imagefolder = "/home/" + user_name + "/RPi_maker_kit5/image_taking/" + image_subfolder + "/"
+imagefolder = "/home/" + user_name + "/RPi_maker_PCB5/image_taking/" + image_subfolder + "/"
 
 # create the directory if it does not exist
 if not os.path.exists(imagefolder):

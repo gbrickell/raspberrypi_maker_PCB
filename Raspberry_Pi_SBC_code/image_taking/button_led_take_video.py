@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # button_led_take_video.py - video taking routine using a button with RGB LED indicator
 #
-# command: python3 ./RPi_maker_kit5/image_taking/button_led_take_video.py
+# command: python3 ./RPi_maker_PCB5/image_taking/button_led_take_video.py
 #
 # this script introduces the use of pulse width modulation (PWM) a technique used to control a variety of 
 # devices (motors, servos as well as LEDs) esentially by switching them on and off very very fast
@@ -74,7 +74,7 @@ def btn_pressed():
 video_subfolder = " "
 print (" ")
 print (" *****************************************************************************************************")
-print (" All button triggered videos will be stored under /home/" + user_name + "/RPi_maker_kit5/image_taking/ ")
+print (" All button triggered videos will be stored under /home/" + user_name + "/RPi_maker_PCB5/image_taking/ ")
 print ("   ..... but you must now enter a subfolder name")
 print ("   ..... just hit RETURN for the default of 'button_video_led_folder'")
 while len(video_subfolder) <= 5 or " " in video_subfolder :
@@ -82,7 +82,7 @@ while len(video_subfolder) <= 5 or " " in video_subfolder :
 print (" *****************************************************************************************************")
 print (" ")
 
-videofolder = "/home/" + user_name + "/RPi_maker_kit5/image_taking/" + video_subfolder + "/"
+videofolder = "/home/" + user_name + "/RPi_maker_PCB5/image_taking/" + video_subfolder + "/"
 
 # create the directory if it does not exist
 if not os.path.exists(videofolder):

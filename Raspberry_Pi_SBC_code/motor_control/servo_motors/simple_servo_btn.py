@@ -6,7 +6,7 @@
 #                         red    -  5V supply
 #                         orange -  PWM signal/control
 #
-# command:  python3 ./RPi_maker_kit5/motor_control/servo_motors/simple_servo_btn.py
+# command:  python3 ./RPi_maker_PCB5/motor_control/servo_motors/simple_servo_btn.py
 #
 
 import time               # this imports the module to allow various time functions to be used

@@ -3,7 +3,7 @@
 # This is free and unencumbered software released into the public domain.
 
 # updated for use with maker kit 5 Apr'21
-# command: python3 /home/pi/RPi_maker_kit5/electronic_basics/buzzer_player.py
+# command: python3 /home/pi/RPi_maker_PCB5/electronic_basics/buzzer_player.py
 #
 # Anyone is free to copy, modify, publish, use, compile, sell, or
 # distribute this software, either in source code form or as a compiled
