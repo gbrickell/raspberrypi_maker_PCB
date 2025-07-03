@@ -6,7 +6,7 @@
 # this version of the Flask app needs to be run using sudo as it uses the 
 #  'production' Flask server - see the code at the very end of the listing
 # command to run: 
-#            sudo python3 ./RPi_maker_kit5/motor_control/web_motor_controller/web_motor_control_app.py
+#            sudo python3 ./RPi_maker_PCB5/motor_control/web_motor_controller/web_motor_control_app.py
 # 
 # provides browser access for the servo control of two semaphore 'flags' using a PCA9685 I2C controller
 #  and a stepper motor that drives the needle of a gauge indicating the CPU temeperature
