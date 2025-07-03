@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <!-- version: 01.00 -->
+  <!-- file name: select_mode.html -->
+  <!-- servo and stepper controller mode selection HTML  -->
+  <!-- Author: GB -->
+  <!-- Date: 170825 -->
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Operation mode selection for servo and stepper controller</title>
+  <meta name="description" content="">
+  <meta name="author" content="GB">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}"> -->
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css') }}"> -->
+  <link rel="stylesheet" href="../../../../maker_kit5/servo_stepper_motors/servo_stepper_controller/static/css/normalize_advanced.css">
+  <link rel="stylesheet" href="../../../../maker_kit5/servo_stepper_motors/servo_stepper_controller/static/css/skeleton_advanced.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}"> -->
+  <link rel="icon" type="image/png" href="../../../../maker_kit5/servo_stepper_motors/servo_stepper_controller/static/images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="selection container">
+
+  	<!-- 1st row of the selection interface: title text -->
+    <div class="first row">
+	  <div class="selection_header" style="text-align: center; font-size: 24px;">
+	    <br/><b>Servo & Stepper Motor Kit</b>
+	    <br/><b>option selection screen</b>
+      </div>
+    </div>
+
+    <!-- 2nd row of the selection interface: option to start the servo semaphore system  -->
+	<div class="second row">
+      <div style="margin-top: 3%; width: auto; padding-left: 15%; padding-right: 15%;">
+        <a class="button button-primary u-full-width" href="/servo_semaphore">start the servo semaphore system</a>
+      </div>
+    </div>
+
+    <!-- 3rd row of the selection interface: option to start the stepper motor CPU temperature gauge system  -->
+	<div class="third row">
+      <div style="margin-top: 3%; width: auto; padding-left: 15%; padding-right: 15%;">
+        <a class="button button-primary u-full-width" href="/stepper_gauge">start the stepper motor CPU temperature gauge</a>
+      </div>
+    </div>
+
+    <!-- 4th row of the selection interface: option to reboot the system: often needed to stop the stepper gauge routine  -->
+	<div class="fourth row">
+      <div style="margin-top: 3%; width: auto; padding-left: 15%; padding-right: 15%;">
+        <a class="button button-primary u-full-width" href="/reboot">reboot system</a>
+      </div>
+    </div>
+
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

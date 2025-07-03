@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <!-- version: 01.00 -->
+  <!-- file name: semaphore_message.html -->
+  <!-- servo stepper controller semaphore message option HTML  -->
+  <!-- Author: GB -->
+  <!-- Date: 170709 -->
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Semaphore message option for servo stepper controller</title>
+  <meta name="description" content="">
+  <meta name="author" content="GB">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}"> -->
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css') }}"> -->
+  <link rel="stylesheet" href="../../../../maker_kit5/servo_stepper_motors/servo_stepper_controller/static/css/normalize_advanced.css">
+  <link rel="stylesheet" href="../../../../maker_kit5/servo_stepper_motors/servo_stepper_controller/static/css/skeleton_advanced.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="video container">
+  
+  	<!-- 1st row of the camera set up interface: title text -->
+    <div class="first row">
+	  <div class="servo_header" style="text-align: center; font-size: 24px;">
+	    <br/><b>Servo & Stepper Motor Kit</b>
+		<br/><b>semaphore message screen</b>
+      </div>
+	  <div class="servo_header" style="text-align: center; font-size: 18px;">	
+	    <br/><b>Please note: the letters H, I, O, W, X & Z</b>
+	    <br/><b>cannot be sent - so they are ignored</b>
+	    <br/><b>Message input at: {{ time_now }}</b>
+	  </div>
+    </div>
+
+	<form action="/servo_semaphore/send_updated_message" method="get">
+
+    <!-- 2nd row of the semaphore message option: message text input -->
+	<div class="second row">
+      <div style="margin-top: 3%; width: auto; padding-left: 15%; padding-right: 15%;"><b>New message text: </b><input id="messageid" name="message" size="20" type="text" value='{{ sem_message }}' /></div>
+
+      <div style="margin-top: 0; width: auto; padding-left: 15%; padding-right: 15%;"><input class="button button-primary" name="submit" type="submit" value="Input new message and start sending" size="10"/></div>
+	</div>
+
+    </form>
+
+  	<!-- 3rd row of the semaphore message interface: send existing message again -->
+	<div class="third row">
+
+      <div style="margin-top: 3%; width: auto; padding-left: 15%; padding-right: 15%;">
+        <a class="button button-primary u-full-width" href="/servo_semaphore/send_same_message?message={{ sem_message }}">Send existing message again</a>
+      </div>
+
+    </div>
+
+  	<!-- 4th row of the semaphore message interface: select new motor mode -->
+	<div class="fourth row">
+
+      <div style="margin-top: 3%; width: auto; padding-left: 15%; padding-right: 15%;">
+        <a class="button button-primary u-full-width" href="/servo_semaphore/select">Select new motor option</a>
+      </div>
+
+    </div>
+
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

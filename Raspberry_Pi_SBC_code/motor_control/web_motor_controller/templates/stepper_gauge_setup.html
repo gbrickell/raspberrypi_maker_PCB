@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+  <!-- version: 01.00 -->
+  <!-- file name: stepper_gauge_setup.html -->
+  <!-- servo stepper controller stepper setup and operate option HTML  -->
+  <!-- Author: GB -->
+  <!-- Date: 170826 -->
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Stepper setup and operate option for servo stepper controller</title>
+  <meta name="description" content="">
+  <meta name="author" content="GB">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}"> -->
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css') }}"> -->
+  <link rel="stylesheet" href="../../../../maker_kit5/servo_stepper_motors/servo_stepper_controller/static/css/normalize_advanced.css">
+  <link rel="stylesheet" href="../../../../maker_kit5/servo_stepper_motors/servo_stepper_controller/static/css/skeleton_advanced.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="stepper container">
+  
+  	<!-- 1st row of the stepper gauge set up interface: title text -->
+    <div class="first row">
+	  <div class="stepper_header" style="text-align: center; font-size: 24px;">
+	    <br/><b>Servo & Stepper Motor Kit</b>
+	    <br/><b>stepper CPU temperature gauge set up screen</b>
+      </div>
+	  <div class="stepper_header" style="text-align: center; font-size: 18px;">	
+	    <br/><b>Time now: {{ time_now }}</b>
+	  </div>
+    </div>
+
+	<form action="/stepper_gauge/interval_move" method="get">
+
+    <!-- 2nd row of the stepper gauge set up interface: zeroing adjustment input -->
+	<div class="second row">
+      <div style="margin-top: 3%; width: auto; padding-left: 15%; padding-right: 15%;"><b>number of sequences to move: </b><input id="moveid" name="moveamt" size="20" type="text" value='{{ move_amount }}' /></div>
+
+      <div style="margin-top: 0; width: auto; padding-left: 15%; padding-right: 15%;"><input class="button button-primary" name="submit" type="submit" value="Input stepper adjustment amount" size="10"/></div>
+	</div>
+
+    </form>
+
+
+    <!-- 3rd row of the stepper gauge set up interface: stepper gauge end of scale checks  -->
+	<div class="third row">
+
+      <div style="margin-top: 3%; width: auto; padding-left: 15%; padding-right: 15%;">
+        <a class="button button-primary u-full-width" href="/stepper_gauge/calibrate_gauge">Do end of scale gauge checks</a>
+      </div>
+
+    </div>
+
+
+    <!-- 4th row of the stepper gauge set up interface: start stepper gauge  -->
+	<div class="fourth row">
+
+      <div style="margin-top: 3%; width: auto; padding-left: 15%; padding-right: 15%;">
+        <a class="button twice-height button-primary u-full-width" href="/stepper_gauge/start_gauge">Start CPU temperature gauge<br/>must reboot to stop</a>
+      </div>
+
+    </div>
+
+
+  	<!-- 5th row of the stepper gauge set up interface: select new mode -->
+	<div class="fifth row">
+
+      <div style="margin-top: 3%; width: auto; padding-left: 15%; padding-right: 15%;">
+        <a class="button button-primary u-full-width" href="/stepper_gauge/select">Select new mode</a>
+      </div>
+
+    </div>
+
+
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
