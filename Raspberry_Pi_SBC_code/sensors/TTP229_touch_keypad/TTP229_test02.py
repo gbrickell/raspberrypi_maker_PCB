@@ -3,7 +3,7 @@
 #  uses two of the spare GPIO poins onthe PCB
 # Author : Enmore Green Limited
 # Date   : 210511
-# command to run this script:  python3 ./RPi_maker_kit5/sensors/TTP229_touch_keypad/TTP229_test02.py
+# command to run this script:  python3 ./RPi_maker_PCB5/sensors/TTP229_touch_keypad/TTP229_test02.py
 #  command above to be updated for the user's path to the code
 
 import RPi.GPIO as GPIO
