@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi kits PCB version of button_timer_take_image.py - timer initiated image taking routine using a button with RGB LED + buzzer indicators
+# RPi PCBs PCB version of button_timer_take_image.py - timer initiated image taking routine using a button with RGB LED + buzzer indicators
 #
 # command: python3 ./RPi_maker_PCB5/image_taking/button_timer_take_image.py
 #

@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi kits PCB RF comms test routine
+# RPi PCBs PCB RF comms test routine
 # file name: switch_socket.py
 # simple 'raw' OOK code send with STX882 tranmission board to an Energenie green button socket
 #
@@ -86,17 +86,17 @@ import RPi.GPIO as GPIO # Import the GPIO Library
 GPIO.setmode(GPIO.BCM) 
 GPIO.setwarnings(False)
 
-RX_red_pin = 22   # this is the GPIO pin that the RED RGB LED is connected to on the Maker Kit PCB 
+RX_red_pin = 22   # this is the GPIO pin that the RED RGB LED is connected to on the Maker PCB PCB 
 
-RX_green_pin = 27 # this is the GPIO pin that the GREEN RGB LED is connected to on the Maker Kit PCB 
+RX_green_pin = 27 # this is the GPIO pin that the GREEN RGB LED is connected to on the Maker PCB PCB 
 
-RX_blue_pin = 17  # this is the GPIO pin that the BLUE RGB LED is connected to on the Maker Kit PCB 
+RX_blue_pin = 17  # this is the GPIO pin that the BLUE RGB LED is connected to on the Maker PCB PCB 
 
-TX_red_pin = 16     # this is the GPIO pin that the RED LED is connected to on the Maker Kit PCB 
+TX_red_pin = 16     # this is the GPIO pin that the RED LED is connected to on the Maker PCB PCB 
 
-TX_amber_pin = 20   # this is the GPIO pin that the AMBER LED is connected to on the Maker Kit PCB
+TX_amber_pin = 20   # this is the GPIO pin that the AMBER LED is connected to on the Maker PCB PCB
 
-TX_green_pin = 21  # this is the GPIO pin that the GREEN LED is connected to on the Maker Kit PCB 
+TX_green_pin = 21  # this is the GPIO pin that the GREEN LED is connected to on the Maker PCB PCB 
 
 GPIO.setup(RX_red_pin, GPIO.OUT)    # this sets the RX RED GPIO pin to be an output 'type' i.e. it will 
                                     # apply about 3.3V to the pin when it is set HIGH (True)
@@ -150,12 +150,12 @@ GPIO.setup(TRANSMIT_PIN, GPIO.OUT)
 # initially make sure the socket is switched off
 transmit_raw_code(skttest01_house_off)
 socketstate = "off"
-# set the maker kit RGB LED to red to indicate the remote socket is off
+# set the maker PCB RGB LED to red to indicate the remote socket is off
 GPIO.output(RX_red_pin, True)
 GPIO.output(RX_green_pin, False)
 GPIO.output(RX_blue_pin, False)
 
-# set the maker kit RED LED to ON to indicate the remote socket is off
+# set the maker PCB RED LED to ON to indicate the remote socket is off
 GPIO.output(TX_red_pin, True)
 GPIO.output(TX_amber_pin, False)
 GPIO.output(TX_green_pin, False)
@@ -185,7 +185,7 @@ try:
 
         # if here then tactile button 1 has been pressed
         print (" button pressed")
-        # set the maker kit RGB LED to blue and the AMBER LED ON to indicate it is sending
+        # set the maker PCB RGB LED to blue and the AMBER LED ON to indicate it is sending
         GPIO.output(RX_red_pin, False) 
         GPIO.output(RX_green_pin, False)
         GPIO.output(RX_blue_pin, True)
@@ -197,11 +197,11 @@ try:
             transmit_raw_code(skttest01_house_on)
             print (" socket switched on")
             socketstate = "on"
-            # set the maker kit RGB LED to green to indicate the remote socket is on
+            # set the maker PCB RGB LED to green to indicate the remote socket is on
             GPIO.output(RX_red_pin, False)
             GPIO.output(RX_green_pin, True)
             GPIO.output(RX_blue_pin, False)
-            # set the maker kit GREEN LED to ON to indicate the remote socket is on
+            # set the maker PCB GREEN LED to ON to indicate the remote socket is on
             GPIO.output(TX_red_pin, False)
             GPIO.output(TX_amber_pin, False)
             GPIO.output(TX_green_pin, True)
@@ -211,11 +211,11 @@ try:
             transmit_raw_code(skttest01_house_off)
             print (" socket switched off")
             socketstate = "off"
-            # set the maker kit RGB LED to red to indicate the remote socket is off
+            # set the maker PCB RGB LED to red to indicate the remote socket is off
             GPIO.output(RX_red_pin, True)
             GPIO.output(RX_green_pin, False)
             GPIO.output(RX_blue_pin, False)
-            # set the maker kit RED LED to ON to indicate the remote socket is off
+            # set the maker PCB RED LED to ON to indicate the remote socket is off
             GPIO.output(TX_red_pin, True)
             GPIO.output(TX_amber_pin, False)
             GPIO.output(TX_green_pin, False)

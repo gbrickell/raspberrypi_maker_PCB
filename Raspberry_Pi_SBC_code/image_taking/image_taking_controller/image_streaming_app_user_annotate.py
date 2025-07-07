@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# RPi kits PCB image streaming Flash app
+# RPi PCBs PCB image streaming Flash app
 # Image taking USB camera Flask controller: python code as part of a Flask based web server system
 #  - this version of the app is for use by any non-root user and uses the 8000 port
 #    BUT it needs for a ram drive to have been previously set up by root

@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi kits PCB - simple object detection triggered by movement sensed by a RCWL-0516 microwave sensor
+# RPi PCBs PCB - simple object detection triggered by movement sensed by a RCWL-0516 microwave sensor
 #
 # command: python3 ./RPi_maker_PCB5/sensors/object_detection/microwave_detection/microwave_detect01.py
 #

@@ -1,7 +1,7 @@
 #!/usr/bin/python
-# RPi kits PCB version 5.0
+# RPi PCBs PCB version 5.0
 # file name: LED1_flash_web.py
-# Electronics Kit Flask controller: python code as part of a Flask based web server system
+# Electronics PCB Flask controller: python code as part of a Flask based web server system
 #  which controls the flashing of a single LED on/off from a web interface
 # 
 # the CLI command text below is for when the app is in the standard folder

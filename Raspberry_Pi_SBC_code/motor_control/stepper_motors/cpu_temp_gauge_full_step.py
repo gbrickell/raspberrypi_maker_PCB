@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# RPi kits PCB version of  cpu_temp_gauge_full_step.py
+# RPi PCBs PCB version of  cpu_temp_gauge_full_step.py
 #  - using a 28BYJ-48 stepper motor control using a ULN2003 control board and a full step sequence
 #     to rotate a gauge 'hand' to indicate CPU temperature
 #  - change direction (StepDir)

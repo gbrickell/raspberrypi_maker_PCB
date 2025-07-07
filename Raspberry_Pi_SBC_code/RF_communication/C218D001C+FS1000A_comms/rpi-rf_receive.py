@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # rpi-rf_receive.py 
-# RPi kits PCB RF comms test routine
+# RPi PCBs PCB RF comms test routine
 # this version for use with the C218D001C receiver module
 
 # Command to run:  python3 ./RPi_maker_PCB5/RF_communication/C218D001C+FS1000A_comms/rpi-rf_receive.py

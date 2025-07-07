@@ -1,4 +1,4 @@
-# RPi kits PCB version of thermistor_sensor.py that shows an approximate temperature of the thermistor when a button is pressed
+# RPi PCBs PCB version of thermistor_sensor.py that shows an approximate temperature of the thermistor when a button is pressed
 #  this is done by measuring the resistance of the thermistor using a so-called 'step response' method
 #  and then the resistance is interpreted as a temperature according to the Steinhart-Hart equation
 
@@ -28,7 +28,7 @@ SH_C = 0.000000085663516
 # This code sets the RPi to use the BCM (Broadcom) pin numbers which is usually the default but is positively set here
 GPIO.setmode(GPIO.BCM)
 
-# For more information about thermistors see the documentation supplied with the kit
+# For more information about thermistors see the documentation supplied with the PCB
 
 
 # GPIO pin_charge charges the capacitor through a fixed 1kohm resistor and the thermistor in series

@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# this control script supports the Raspberry Pi Maker Kit 5 project
-# - when run as shown in the kit documentation it will download various PDFs, Scratch & python programs plus other material
+# this control script supports the Raspberry Pi Maker PCB 5 project
+# - when run as shown in the PCB documentation it will download various PDFs, Scratch & python programs plus other material
 
 # output a message about 'activating' a virtual environment for using Python
 echo "**********************************************"
@@ -22,8 +22,8 @@ then
 
   echo " script size looks OK - executing all the commands"
 
-# create the main kit directory
-echo " Creating the main kit folder"
+# create the main PCB directory
+echo " Creating the main PCB folder"
 mkdir /home/$uservarname/RPi_maker_PCB5
 
 # download the documentation:
@@ -34,7 +34,7 @@ wget -O /home/$uservarname/RPi_maker_PCB5/RPi_maker_PCB5_readme.txt https://onli
 # 2. download the "Getting Started" PDF and store it in the designated folder on the Raspberry Pi
 wget -O /home/$uservarname/RPi_maker_PCB5/RPi_maker_PCB5_getting_started.pdf https://onlinedevices.org.uk/dl1652
 
-# 3. download the "RPi Maker Kit Usage Documentation" PDF and store it in the designated folder on the Raspberry Pi
+# 3. download the "RPi Maker PCB Usage Documentation" PDF and store it in the designated folder on the Raspberry Pi
 wget -O /home/$uservarname/RPi_maker_PCB5/RPi_maker_PCB5_usage_documentation.pdf https://onlinedevices.org.uk/dl1531
 
 ##################################
@@ -103,8 +103,8 @@ echo " Downloading the Electronics Flask web files"
 wget -O /home/$uservarname/RPi_maker_PCB5/electronic_basics/ebasics_web_controller/static/css/normalize_advanced.css https://onlinedevices.org.uk/dl1216
 wget -O /home/$uservarname/RPi_maker_PCB5/electronic_basics/ebasics_web_controller/static/css/skeleton_advanced.css https://onlinedevices.org.uk/dl1217
 wget -O /home/$uservarname/RPi_maker_PCB5/electronic_basics/ebasics_web_controller/static/images/favicon.png https://onlinedevices.org.uk/dl1218
-wget -O /home/$uservarname/RPi_maker_PCB5/electronic_basics/ebasics_web_controller/static/images/RPi_kits_PCB05_20210419_160549156_900w.jpg https://onlinedevices.org.uk/dl1226
-wget -O /home/$uservarname/RPi_maker_PCB5/electronic_basics/ebasics_web_controller/static/images/RPi_kits_PCB05_front_image01.png https://onlinedevices.org.uk/dl1225
+wget -O /home/$uservarname/RPi_maker_PCB5/electronic_basics/ebasics_web_controller/static/images/RPi_PCB05_20210419_160549156_900w.jpg https://onlinedevices.org.uk/dl1226
+wget -O /home/$uservarname/RPi_maker_PCB5/electronic_basics/ebasics_web_controller/static/images/RPi_PCB05_front_image01.png https://onlinedevices.org.uk/dl1225
 wget -O /home/$uservarname/RPi_maker_PCB5/electronic_basics/ebasics_web_controller/templates/electronics_header_insert.html https://onlinedevices.org.uk/dl1227
 wget -O /home/$uservarname/RPi_maker_PCB5/electronic_basics/ebasics_web_controller/templates/electronics_layout.html https://onlinedevices.org.uk/dl1228
 wget -O /home/$uservarname/RPi_maker_PCB5/electronic_basics/ebasics_web_controller/templates/electronics_select_mode1.html https://onlinedevices.org.uk/dl1229
@@ -175,8 +175,8 @@ echo " Downloading the Image Taking Flask web files"
 wget -O /home/$uservarname/RPi_maker_PCB5/image_taking/image_taking_controller/static/css/normalize_advanced.css https://onlinedevices.org.uk/dl1216
 wget -O /home/$uservarname/RPi_maker_PCB5/image_taking/image_taking_controller/static/css/skeleton_advanced.css https://onlinedevices.org.uk/dl1217
 wget -O /home/$uservarname/RPi_maker_PCB5/image_taking/image_taking_controller/static/images/favicon.png https://onlinedevices.org.uk/dl1218
-wget -O /home/$uservarname/RPi_maker_PCB5/image_taking/image_taking_controller/static/images/RPi_kits_PCB05_20210419_160549156_900w.jpg https://onlinedevices.org.uk/dl1226
-wget -O /home/$uservarname/RPi_maker_PCB5/image_taking/image_taking_controller/static/images/RPi_kits_PCB05_front_image01.png https://onlinedevices.org.uk/dl1225
+wget -O /home/$uservarname/RPi_maker_PCB5/image_taking/image_taking_controller/static/images/RPi_PCB05_20210419_160549156_900w.jpg https://onlinedevices.org.uk/dl1226
+wget -O /home/$uservarname/RPi_maker_PCB5/image_taking/image_taking_controller/static/images/RPi_PCB05_front_image01.png https://onlinedevices.org.uk/dl1225
 wget -O /home/$uservarname/RPi_maker_PCB5/image_taking/image_taking_controller/templates/cam_options_setup.html https://onlinedevices.org.uk/dl1591
 wget -O /home/$uservarname/RPi_maker_PCB5/image_taking/image_taking_controller/templates/cam_setup_mode.html https://onlinedevices.org.uk/dl1592
 wget -O /home/$uservarname/RPi_maker_PCB5/image_taking/image_taking_controller/templates/header_insert.html https://onlinedevices.org.uk/dl1593
@@ -438,7 +438,7 @@ echo " All downloads are now complete."
 echo " "
 echo " You might want to scroll back through the Terminal output to see if there are any errors and "
 echo " also please read the downloaded RPi_maker_PCB5_readme01.txt file to see the latest information "
-echo " regarding this kit and advice on how you can dispose of it, if or when you are finished with it."
+echo " regarding this PCB and advice on how you can dispose of it, if or when you are finished with it."
 echo " "
 echo " "
 

@@ -1,4 +1,4 @@
-# adapted for the RPi Maker Kit v5
+# adapted for the RPi Maker PCB v5
 # command:  python3 /home/pi/RPi_maker_PCB5/sensors/MPR121_touch_sensor/playtest.py
 
 # Copyright (c) 2014 Adafruit Industries
@@ -80,7 +80,7 @@ SOUND_MAPPING = {
 #   4: '/usr/share/scratch/Media/Sounds/Animal/Duck.wav',
 #   5: '/usr/share/scratch/Media/Sounds/Animal/Goose.wav',
 #   6: '/usr/share/scratch/Media/Sounds/Animal/Horse.wav',
-#   7: '/usr/share/scratch/Media/Sounds/Animal/Kitten.wav',
+#   7: '/usr/share/scratch/Media/Sounds/Animal/PCBten.wav',
 #   8: '/usr/share/scratch/Media/Sounds/Animal/Meow.wav',
 #   9: '/usr/share/scratch/Media/Sounds/Animal/Owl.wav',
 #   10: '/usr/share/scratch/Media/Sounds/Animal/Rooster.wav',

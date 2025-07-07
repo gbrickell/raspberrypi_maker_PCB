@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # Key_Fob_RX_plot_C218D001C.py 
-# RPi kits PCB RF comms test routine
+# RPi PCBs PCB RF comms test routine
 
 # Basic RF code receiver using the C218D001C 
 # used with the key fob buttons to receive and plot the A nad B button signals
@@ -52,17 +52,17 @@ import RPi.GPIO as GPIO   # this imports the whole GPIO module to allow control 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-RX_red_pin = 22   # this is the GPIO pin that the RED RGB LED is connected to on the Maker Kit PCB 
+RX_red_pin = 22   # this is the GPIO pin that the RED RGB LED is connected to on the Maker PCB PCB 
 
-RX_green_pin = 27 # this is the GPIO pin that the GREEN RGB LED is connected to on the Maker Kit PCB 
+RX_green_pin = 27 # this is the GPIO pin that the GREEN RGB LED is connected to on the Maker PCB PCB 
 
-RX_blue_pin = 17  # this is the GPIO pin that the BLUE RGB LED is connected to on the Maker Kit PCB 
+RX_blue_pin = 17  # this is the GPIO pin that the BLUE RGB LED is connected to on the Maker PCB PCB 
 
-TX_red_pin = 16     # this is the GPIO pin that the RED LED is connected to on the Maker Kit PCB 
+TX_red_pin = 16     # this is the GPIO pin that the RED LED is connected to on the Maker PCB PCB 
 
-TX_amber_pin = 14   # this is the GPIO pin that the AMBER LED is connected to on the Maker Kit PCB
+TX_amber_pin = 14   # this is the GPIO pin that the AMBER LED is connected to on the Maker PCB PCB
 
-TX_green_pin = 15  # this is the GPIO pin that the GREEN LED is connected to on the Maker Kit PCB 
+TX_green_pin = 15  # this is the GPIO pin that the GREEN LED is connected to on the Maker PCB PCB 
 
 GPIO.setup(RX_red_pin, GPIO.OUT)    # this sets the RX RED GPIO pin to be an output 'type' i.e. it will 
                                     # apply about 3.3V to the pin when it is set HIGH (True)

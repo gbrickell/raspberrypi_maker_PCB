@@ -1,4 +1,4 @@
-# RPi kits PCB version of LED_red_green_flash.py that alternates on/off for two LEDs (red & green)
+# RPi PCBs PCB version of LED_red_green_flash.py that alternates on/off for two LEDs (red & green)
 
 # command to run this script:  python3 ./RPi_maker_PCB5/electronic_basics/LED_red_green_flash.py
 

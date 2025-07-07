@@ -1,4 +1,4 @@
-# adapted for the RPi Maker Kit v5
+# adapted for the RPi Maker PCB v5
 # command:  python3 /home/pi/RPi_maker_PCB5/sensors/MPR121_touch_sensor/cap-touch.py
 
 # Based on Arduino example by Jim Lindblom

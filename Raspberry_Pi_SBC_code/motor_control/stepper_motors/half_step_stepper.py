@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-# RPi kits PCB version of half_step_stepper_detailed.py 
-#  - using a 28BYJ-48 stepper motor control connected to a ULN2003 control board and the RPi_kits_PCB
+# RPi PCBs PCB version of half_step_stepper_detailed.py 
+#  - using a 28BYJ-48 stepper motor control connected to a ULN2003 control board and the RPi_PCB
 #  - and a half step drive step sequence that energises either one or two coils at one time which has 
 #     the effect of creating a different single step that is half the amount ie a 'half step'
 #  - it simply rotates the stepper motor one full revolution with parameters that can be set to:

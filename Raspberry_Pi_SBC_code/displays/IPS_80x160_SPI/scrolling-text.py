@@ -1,4 +1,4 @@
-# adaptation for RPi Maker Kit PCB v5.0
+# adaptation for RPi Maker PCB PCB v5.0
 # command:  python3 ./RPi_maker_PCB5/displays/IPS_80x160_SPI/scrolling-text.py
 
 from PIL import Image
@@ -11,7 +11,7 @@ import ST7735
 
 MESSAGE = "Hello World! How are you today?"
 
-# Create ST7735 LCD display class customised for RPI Maker Kit v5.0
+# Create ST7735 LCD display class customised for RPI Maker PCB v5.0
 disp = ST7735.ST7735(
     port=0,
     cs=0,            # using SPI CE0

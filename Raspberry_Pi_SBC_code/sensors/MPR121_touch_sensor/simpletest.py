@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# RPi kits PCB MPR121 touch sensor simple test program
+# RPi PCBs PCB MPR121 touch sensor simple test program
 # command python3 ./RPi_maker_PCB5/sensors/MPR121_touch_sensor/simpletest.py
 
 

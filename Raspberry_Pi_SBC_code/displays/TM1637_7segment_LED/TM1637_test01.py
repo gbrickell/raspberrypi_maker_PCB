@@ -1,4 +1,4 @@
-# RPI Maker Kit examle code for the TM1637 7 segment LED display
+# RPI Maker PCB examle code for the TM1637 7 segment LED display
 
 # command:  python3 ./RPi_maker_PCB5/displays/TM1637_7segment_LED/TM1637_test01.py
 

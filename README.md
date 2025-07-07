@@ -11,13 +11,13 @@
 
 A robust permanent module, that connects to the Raspberry Pi GPIO pins, can be created by soldering a set of components into a custom Printed Circuit Board (PCB v5.0). The module design, as shown above, includes a number of on-board devices that can be controlled by the Pi (e.g. buzzer, LEDs, etc.), but also allows a wide range of further components to be connected to the PCB enabling more Pi controlled systems to be built and explored.
 
-Full details about the project are published at <a href="https://onlinedevices.org.uk/Raspberry+Pi+Maker+PCB" target="_blank" >this link</a> and the designs for a small number of associated custom 3D printed components can be downloaded from <a href="https://www.prusaprinters.org/prints/68834-raspberry-pi-maker-kit-pcb-stands" target="_blank">here</a>.
+Full details about the project are published at <a href="https://onlinedevices.org.uk/Raspberry+Pi+Maker+PCB" target="_blank" >this link</a> and the designs for a small number of associated custom 3D printed components can be downloaded from <a href="https://www.prusaprinters.org/prints/68834-raspberry-pi-maker-PCB-stands" target="_blank">here</a>.
 
 ## Custom PCB design
 
 The custom PCB (now at v5.0) was designed using KiCAD and the layout has been defined to allow headers and other connectors for all the components needed to build a fully populated module.
 
-<img src="images/RPi_kits_PCB05_front_image01.png" width="200" height="180"> &nbsp; &nbsp; <img src="images/RPi_PCB05_front01_900w.jpg" width="198" height="180"> &nbsp; &nbsp; <img src="images/RPI_PCB05_kit_parts_20210512_160539500_900w.jpg" width="267" height="180">  
+<img src="images/RPi_PCB05_front_image01.png" width="200" height="180"> &nbsp; &nbsp; <img src="images/RPi_PCB05_front01_900w.jpg" width="198" height="180"> &nbsp; &nbsp; <img src="images/RPI_PCB05_parts_20210512_160539500_900w.jpg" width="267" height="180">  
 
 Gerber files for the PCB design can be downloaded from the PCB_design_files folder.
 

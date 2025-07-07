@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# RPi kits PCB version of servo_btn.py - simple servo control with GPIO PWM and powered from RPi
+# RPi PCBs PCB version of servo_btn.py - simple servo control with GPIO PWM and powered from RPi
 # moves a SG90 servo with GPIO PWM from min to max position whenever a button is pressed
 # SG90 servo has 3 wires: brown  -  GND
 #                         red    -  5V supply

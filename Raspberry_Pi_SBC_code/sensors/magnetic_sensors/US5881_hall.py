@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi kits PCB - simple Hall effect sensor test program using a US5881 
+# RPi PCBs PCB - simple Hall effect sensor test program using a US5881 
 #  with the signal wire connected to GPIO#18
 #
 # command: python3 ./RPi_maker_PCB5/sensors/magnetic_sensors/US5881_hall.py
@@ -31,7 +31,7 @@ import RPi.GPIO as GPIO    # this imports the module to allow the GPIO pins to b
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-print("Setup GPIO pin as input on Maker Kit spare GPIO18")
+print("Setup GPIO pin as input on Maker PCB spare GPIO18")
 
 # Set Switch GPIO as input
 # Pull high by default

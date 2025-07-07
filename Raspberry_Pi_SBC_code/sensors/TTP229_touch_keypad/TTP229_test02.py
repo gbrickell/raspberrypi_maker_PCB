@@ -16,8 +16,8 @@ inputKeys=16
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False) 
 """ SCL and SDO pin can be any pin """
-SCLPin=18  #using a spare GPIO pin on the RPi Maker Kit PCB
-SDOPin=15  #using a spare GPIO pin on the RPi Maker Kit PCB
+SCLPin=18  #using a spare GPIO pin on the RPi Maker PCB PCB
+SDOPin=15  #using a spare GPIO pin on the RPi Maker PCB PCB
 
 """
 Set SCL pin as OUTPUT

@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi kits PCB version of hello_world.py that just displays "Hello World"
+# RPi PCBs PCB version of hello_world.py that just displays "Hello World"
 # On a 16×2 LCD, the rows are numbered 1 – 2, while the columns are numbered 0 – 15. 
 # So to print “Hello World!” at the first column of the top row, you would use: 
 # mylcd.lcd_display_string(“Hello World!”, 1, 0).

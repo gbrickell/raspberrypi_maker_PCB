@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #
-# RPi kits PCB version of wave_drive_stepper_detailed.py 
-#  - using a 28BYJ-48 stepper motor control connected to a ULN2003 control board and the RPi_kits_PCB
+# RPi PCBs PCB version of wave_drive_stepper_detailed.py 
+#  - using a 28BYJ-48 stepper motor control connected to a ULN2003 control board and the RPi_PCB
 #  - and a wave drive step sequence that uses just one phase at a time and is the simplest method but least used
 #  - it simply rotates the stepper motor one full revolution with parameters that can be set to:
 #    - change direction (StepDir)

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# RPi kits PCB version of bmp180.py originally developed by Matt Hawkins 17/02/2017 http://www.raspberrypi-spy.co.uk/
+# RPi PCBs PCB version of bmp180.py originally developed by Matt Hawkins 17/02/2017 http://www.raspberrypi-spy.co.uk/
 #  uses one of the green 5P I2C connectors on the PCB with the 3V3 power line as a supply
 
 # commannd to run this script:  python3 ./RPi_maker_PCB5/sensors/pressure_sensors/bmp180.py

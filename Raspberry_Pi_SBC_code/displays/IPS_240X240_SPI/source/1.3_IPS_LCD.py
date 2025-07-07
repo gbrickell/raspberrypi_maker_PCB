@@ -1,23 +1,23 @@
 ##!/usr/bin/python
-# RPi kits PCB version of test software from QDtech co.,LTD downloadable from http://www.lcdwiki.com
+# RPi PCBs PCB version of test software from QDtech co.,LTD downloadable from http://www.lcdwiki.com
 # various additions/changes made to their test software
 
 # command python3 ./RPi_maker_PCB5/displays/IPS_240X240_SPI/source/1.3_IPS_LCD.py
 
 #=====================================power supply wiring===========================================//
 # OLED Module                Raspberry PI    
-#    VCC        connect       DC 3.3V         // Maker Kit PCB 7P black connector 3V3
-#    GND        connect          GND          // Maker Kit PCB 7P black connector GND
+#    VCC        connect       DC 3.3V         // Maker PCB PCB 7P black connector 3V3
+#    GND        connect          GND          // Maker PCB PCB 7P black connector GND
 #======================================data line wiring=============================================//
 #The default data bus type for this module is 4-wire SPI
 # OLED Module                Raspberry PI 
-#    SDA        connect       19(bcm:10)      // Maker Kit PCB 7P black connector MOSI
+#    SDA        connect       19(bcm:10)      // Maker PCB PCB 7P black connector MOSI
 #======================================control line wiring==========================================//
 # OLED Module                Raspberry PI 
-#    RES        connect        5(bcm:3)       // Maker Kit PCB GPIO spare #14 
-#    DC         connect        3(bcm:2)       // Maker Kit PCB GPIO spare #15 
-#    SCL        connect       23(bcm:11)      // Maker Kit PCB 7P black connector SCLK
-#    BLK        connect       12(bcm:18)      // Maker Kit PCB GPIO spare #18 
+#    RES        connect        5(bcm:3)       // Maker PCB PCB GPIO spare #14 
+#    DC         connect        3(bcm:2)       // Maker PCB PCB GPIO spare #15 
+#    SCL        connect       23(bcm:11)      // Maker PCB PCB 7P black connector SCLK
+#    BLK        connect       12(bcm:18)      // Maker PCB PCB GPIO spare #18 
 #========================================touch screen wiring========================================//
 #  none
 #*****************************************************************************************************/	

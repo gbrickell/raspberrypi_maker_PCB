@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# RPi kits PCB version of HG7881 motor controller
+# RPi PCBs PCB version of HG7881 motor controller
 
 # command to run:  python3 ./RPi_maker_PCB5/motor_control/drive_motors/HG7881_motor_controller/HG7881-motors_LCD_on_off.py
 # simple on/off test version

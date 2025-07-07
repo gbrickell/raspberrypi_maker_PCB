@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi kits PCB version of simple_text.py
+# RPi PCBs PCB version of simple_text.py
 # but a mod made to the Adafruit_GPIO library to avoid a missing BB module error
 
 # based upon the Adafruit examples when using the Adafruit SSD1306 library

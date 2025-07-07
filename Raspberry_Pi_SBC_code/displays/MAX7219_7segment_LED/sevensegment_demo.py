@@ -3,7 +3,7 @@
 # Copyright (c) 2017-18 Richard Hull and contributors
 # See LICENSE.rst for details.
 
-# used in a RPi maker Kit display demonstration
+# used in a RPi maker PCB display demonstration
 # command:  python3 ./RPi_maker_PCB5/displays/MAX7219_7segment_LED/sevensegment_demo.py
 
 """
