@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi PCBs PCB RF comms test routine
+# RPi PCB RF comms test routine
 # file name: switch_socke02t.py   (identical code as used with the STX882 - but maintained separately so that they could diverge)
 # simple 'raw' OOK code send with FS1000A tranmission board to an Energenie green button socket
 #

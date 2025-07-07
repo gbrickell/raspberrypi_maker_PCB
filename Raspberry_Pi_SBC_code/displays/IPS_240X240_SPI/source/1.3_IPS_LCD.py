@@ -1,5 +1,5 @@
 ##!/usr/bin/python
-# RPi PCBs PCB version of test software from QDtech co.,LTD downloadable from http://www.lcdwiki.com
+# RPi PCB version of test software from QDtech co.,LTD downloadable from http://www.lcdwiki.com
 # various additions/changes made to their test software
 
 # command python3 ./RPi_maker_PCB5/displays/IPS_240X240_SPI/source/1.3_IPS_LCD.py

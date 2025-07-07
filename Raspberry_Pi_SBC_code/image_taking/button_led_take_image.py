@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi PCBs PCB version of button_led_take_image.py - image taking routine using a button with RGB LED indicator
+# RPi PCB version of button_led_take_image.py - image taking routine using a button with RGB LED indicator
 #
 # command: python3 ./RPi_maker_PCB5/image_taking/button_led_take_image.py
 #

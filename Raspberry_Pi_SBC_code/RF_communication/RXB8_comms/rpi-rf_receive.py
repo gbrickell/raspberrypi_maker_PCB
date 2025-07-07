@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # rpi-rf_receive.py 
-# RPi PCBs PCB RF comms test routine
+# RPi PCB RF comms test routine
 # this version for use with the RXB8 receiver module
 
 # Command to run:  python3 ./RPi_maker_PCB5/RF_communication/RXB8_comms/rpi-rf_receive.py

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# RPi PCBs PCB version of servo_stepper_control_app.py
+# RPi PCB version of servo_stepper_control_app.py
 # Servo & Stepper Motor PCB Flask controller: python code as part of a Flask based web server system
 # 
 # this version of the Flask app needs to be run using sudo as it uses the 

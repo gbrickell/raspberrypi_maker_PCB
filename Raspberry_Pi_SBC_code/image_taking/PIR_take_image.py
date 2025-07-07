@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi PCBs PCB version of PIR_take_image.py - image taking routine triggered by movement detected by a PIR
+# RPi PCB version of PIR_take_image.py - image taking routine triggered by movement detected by a PIR
 #
 # command: python3 ./RPi_maker_PCB5/image_taking/PIR_take_image.py
 #

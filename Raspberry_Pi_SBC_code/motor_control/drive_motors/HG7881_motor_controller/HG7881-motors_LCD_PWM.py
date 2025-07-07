@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# RPi PCBs PCB version of HG7881 motor controller
+# RPi PCB version of HG7881 motor controller
 
 # command to run:  python3 ./RPi_maker_PCB5/motor_control/drive_motors/HG7881_motor_controller/HG7881-motors_LCD_PWM.py
 # PWM test version

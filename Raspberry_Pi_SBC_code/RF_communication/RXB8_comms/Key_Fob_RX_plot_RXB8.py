@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # Key_Fob_RX_plot_RXB8.py 
-# RPi PCBs PCB RF comms test routine
+# RPi PCB RF comms test routine
 
 # Basic RF code receiver using the RXB8 
 # used with the key fob buttons to receive and plot the A and B button signals

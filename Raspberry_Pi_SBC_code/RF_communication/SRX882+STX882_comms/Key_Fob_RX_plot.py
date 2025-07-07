@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # Key_Fob_RX_plot.py 
-# RPi PCBs PCB RF comms test routine
+# RPi PCB RF comms test routine
 
 # Basic RF code receiver using the SRX882
 # used with the key fob buttons to receive and plot the A nad B button signals

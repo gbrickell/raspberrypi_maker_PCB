@@ -1,4 +1,4 @@
-# RPi PCBs PCB version of LED_button_flash.py that lights a single LED 'on' for 3 secs and then 'off' when a button is pressed
+# RPi PCB version of LED_button_flash.py that lights a single LED 'on' for 3 secs and then 'off' when a button is pressed
 
 # command to run this script:  python3 ./RPi_maker_PCB5/electronic_basics/LED_button_flash.py
 

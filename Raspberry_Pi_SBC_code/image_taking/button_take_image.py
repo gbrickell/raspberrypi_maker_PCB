@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi PCBs PCB version of button_take_image.py - simple image taking routine using a button
+# RPi PCB version of button_take_image.py - simple image taking routine using a button
 #
 # command: python3 ./RPi_maker_PCB5/image_taking/button_take_image.py
 #

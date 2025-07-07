@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# RPi PCBs PCB version of  semaphore_I2C_2servo.py - simple test program for the servo control of two semaphore 'flags' 
+# RPi PCB version of  semaphore_I2C_2servo.py - simple test program for the servo control of two semaphore 'flags' 
 #  using a PCA9685 I2C controller to move servos on channels 0 (left servo) and 15 (right servo) 
 #  to a set of positions depending upon a text message that is set in line 130
 #

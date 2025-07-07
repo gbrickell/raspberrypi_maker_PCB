@@ -1,4 +1,4 @@
-# RPi PCBs PCB version of phototran_light_sensor.py that times how long it takes to recharge a capacitor when a button is pressed
+# RPi PCB version of phototran_light_sensor.py that times how long it takes to recharge a capacitor when a button is pressed
 #   where this provides a 'proxy' measurement of the phototransistor 'resistance' and hence the light level
 
 # command to run this script:  python3 ./RPi_maker_PCB5/sensors/light_sensors/phototran_light_sensor.py

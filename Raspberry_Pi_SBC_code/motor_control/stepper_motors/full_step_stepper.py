@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# RPi PCBs PCB version of full_step_stepper_detailed.py 
+# RPi PCB version of full_step_stepper_detailed.py 
 #  - using a 28BYJ-48 stepper motor control connected to a ULN2003 control board and the RPi_PCB
 #  - and a full step drive step sequence that uses two phase at a time and produces the maximum torque
 #  - it simply rotates the stepper motor one full revolution with parameters that can be set to:

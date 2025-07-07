@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi PCBs PCB - simple Hall effect sensor test program using a US5881 
+# RPi PCB - simple Hall effect sensor test program using a US5881 
 #  with the signal wire connected to GPIO#18
 #
 # command: python3 ./RPi_maker_PCB5/sensors/magnetic_sensors/US5881_hall.py

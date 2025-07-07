@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi PCBs PCB version of LCD_all_functions_demo2.py runs through a large sequence of display functions
+# RPi PCB version of LCD_all_functions_demo2.py runs through a large sequence of display functions
 #     with 3 second gaps between each item
 # On a 16×2 LCD, the rows are numbered 1 – 2, while the columns are numbered 0 – 15. 
 

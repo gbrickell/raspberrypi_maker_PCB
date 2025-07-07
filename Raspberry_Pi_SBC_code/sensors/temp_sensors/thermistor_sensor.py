@@ -1,4 +1,4 @@
-# RPi PCBs PCB version of thermistor_sensor.py that shows an approximate temperature of the thermistor when a button is pressed
+# RPi PCB version of thermistor_sensor.py that shows an approximate temperature of the thermistor when a button is pressed
 #  this is done by measuring the resistance of the thermistor using a so-called 'step response' method
 #  and then the resistance is interpreted as a temperature according to the Steinhart-Hart equation
 

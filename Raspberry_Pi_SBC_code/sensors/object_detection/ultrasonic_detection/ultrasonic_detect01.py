@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi PCBs PCB simple ultrasonic object detection using the HC-SR04P sensor
+# RPi PCB simple ultrasonic object detection using the HC-SR04P sensor
 #   **** NB this must be the 3.3V powered 'P' version ***
 #
 # command: python3 ./RPi_maker_PCB5/sensors/object_detection/ultrasonic_detection/ultrasonic_detect01.py

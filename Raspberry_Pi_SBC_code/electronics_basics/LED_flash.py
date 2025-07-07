@@ -1,4 +1,4 @@
-# RPi PCBs PCB version of LED_flash.py that flashes a single LED on/off
+# RPi PCB version of LED_flash.py that flashes a single LED on/off
 
 # command to run this script:  python3 ./RPi_maker_PCB5/electronic_basics/LED_flash.py
 

@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# RPi PCBs PCB - simple object detection triggered by SR501, SR312 or SR602 PIR sensor
+# RPi PCB - simple object detection triggered by SR501, SR312 or SR602 PIR sensor
 #
 # command: python3 ./RPi_maker_PCB5/sensors/object_detection/PIR_detection/PIR_detect01.py
 #

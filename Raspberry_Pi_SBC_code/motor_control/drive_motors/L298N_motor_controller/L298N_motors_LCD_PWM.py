@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# RPi PCBs PCB version of L298N_2motors_test01.py
+# RPi PCB version of L298N_2motors_test01.py
 # using a L298N to control the motors with PWM
 
 # command to run:  python3 ./RPi_maker_PCB5/motor_control/drive_motors/L298N_motor_controller/L298N_motors_LCD_PWM.py

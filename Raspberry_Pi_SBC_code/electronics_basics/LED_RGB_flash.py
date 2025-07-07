@@ -1,4 +1,4 @@
-# RPi PCBs PCB version of LED_RGB_flash.py that alternates on/off for the individual red, green & blue LEDs within a combined RGB LED
+# RPi PCB version of LED_RGB_flash.py that alternates on/off for the individual red, green & blue LEDs within a combined RGB LED
 # this script introduces the use of pulse width modulation (PWM) a technique used to control a variety of 
 # devices (motors, servos as well as LEDs) essentially by switching them on and off very very fast
 # PWM has 2 main parameters:
