@@ -10,7 +10,7 @@ The various sections below provide more detail on:
  - the design details for the PCB made available in the 'PCB_design_files' folder; and
  - the software available as downloads from the 'Raspberry_Pi_SBC_code' folder.
 
-## Documentation:
+## Documentation
 
 A robust permanent module, that connects to the Raspberry Pi GPIO pins, can be created by soldering a set of components into the custom Printed Circuit Board (PCB v5.0). The module design, as shown below, includes a number of on-board devices that can be controlled by the Pi (e.g. buzzer, LEDs, etc.), but also allows a wide range of further components to be connected to the PCB enabling more Pi controlled systems to be built and explored.
 
