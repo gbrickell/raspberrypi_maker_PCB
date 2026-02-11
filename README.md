@@ -33,7 +33,7 @@ The custom PCB (now at v5.0) was designed using KiCAD and the layout has been de
 Gerber files for the PCB design can be downloaded from the PCB_design_files folder.
 
 ## Raspberry Pi SBC code
-The code and documentation has been updated to allow for a generalised username instead of the previous default username 'pi', and for the use of Python using the Bookworm OS the use of a Virtual Environment is described.
+The code and documentation has been updated to allow for a generalised username instead of the 'old' default username 'pi', and for the use of Python using the Bookworm OS with the use of a Virtual Environment also described.
 
 An installation script is also provided that not only downloads all the code and documentation but also installs all the various libraries/modules needed by the code.
 
