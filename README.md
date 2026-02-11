@@ -1,17 +1,28 @@
 # Raspberry Pi PCB v5.0
-## Documentation for usage exploration of:
+
+The aim of this project was to consolidate a number of components previously used in separate breadboard-based educational projects, along with some additional options, in a more robust, permanent assembly using a custom Printed Circuit Board (PCB). 
+This new platform would then allow an even wider range of projects to be developed, but it should be noted that all the various uses profiled here can still be carried out without the use of the custom PCB which just makes the various connections to the Raspberry Pi a lot easier.
+
+Full details about the project are published at <a href="https://onlinedevices.org.uk/Raspberry+Pi+Maker+PCB" target="_blank" >this link</a> and the designs for a small number of associated custom 3D printed components can be downloaded from <a href="https://www.prusaprinters.org/prints/68834-raspberry-pi-maker-PCB-stands" target="_blank">here</a>.
+
+The various sections below provide more detail on:
+ - the documentation made available in the 'documentation' folder;
+ - the design details for the PCB made available in the 'PCB_design_files' folder; and
+ - the software available as downloads from the 'Raspberry_Pi_SBC_code' folder.
+
+## Documentation:
+
+A robust permanent module, that connects to the Raspberry Pi GPIO pins, can be created by soldering a set of components into the custom Printed Circuit Board (PCB v5.0). The module design, as shown below, includes a number of on-board devices that can be controlled by the Pi (e.g. buzzer, LEDs, etc.), but also allows a wide range of further components to be connected to the PCB enabling more Pi controlled systems to be built and explored.
+
+&nbsp; &nbsp; <img src="images/annotated_assembled_PCB05_v2_900w.jpg" width="600" height="338">
+
+Documentation is made available for usage exploration of:
  - basic electronic functions
  - LCD, OLED and LED displays
  - servo, stepper and drive motor control
  - various sensors
  - 433Mz ASK/OOK RF communications, and 
  - image taking with a USB camera
-
- &nbsp; &nbsp; <img src="images/annotated_assembled_PCB05_v2_900w.jpg" width="600" height="338">
-
-A robust permanent module, that connects to the Raspberry Pi GPIO pins, can be created by soldering a set of components into a custom Printed Circuit Board (PCB v5.0). The module design, as shown above, includes a number of on-board devices that can be controlled by the Pi (e.g. buzzer, LEDs, etc.), but also allows a wide range of further components to be connected to the PCB enabling more Pi controlled systems to be built and explored.
-
-Full details about the project are published at <a href="https://onlinedevices.org.uk/Raspberry+Pi+Maker+PCB" target="_blank" >this link</a> and the designs for a small number of associated custom 3D printed components can be downloaded from <a href="https://www.prusaprinters.org/prints/68834-raspberry-pi-maker-PCB-stands" target="_blank">here</a>.
 
 ## Custom PCB design
 
